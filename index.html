@@ -1,0 +1,1534 @@
+<!DOCTYPE html>
+<!-- XMLHttpRequest Test Result -->
+<html>
+<head>
+  <title>XMLHttpRequest Test Status</title>
+  <link rel=stylesheet href="styles/style.css" type="text/css">
+</head>
+<body>
+  <p class="title"><a href="https://dvcs.w3.org/hg/xhr/raw-file/tip/Overview.html" target="_blank">W3C <em>XMLHttpRequest</em></a> <a href="http://w3c-test.org/web-platform-tests/master/XMLHttpRequest/" target="_blank"><em>Test</em></a> Result</p>
+  <p class="notice">* To contributors: please make a PR on any invalid test results. Updating with the links to filed bugs are very welcome!</p>
+  <table summary="2007 Major IT Companies' Profit">
+    <thead>
+      <tr>
+        <th scope="col">Test</th>
+        <th scope="col" title="-">WebKit</th>
+        <th scope="col" title="Chrome 32.0.1676.2 canary">Blink</th>
+        <th scope="col" title="Firefox Nightly 27.0a1">Gecko</th>
+        <th scope="col" title="IE10">Trident</th>
+        <th scope="col" title="Opera 12.16">Presto</th>
+        <th scope="col">Remark</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="http://w3c-test.org/web-platform-tests/master/XMLHttpRequest/abort-after-receive.htm">abort-after-receive.htm</a></td>
+        <td class="webkit notperformed">-</td>
+        <td class="blink fail"><a href="about:blank">Fail</a></td>
+        <td class="gecko pass">Pass</td>
+        <td class="trident pass">Pass</td>
+        <td class="presto pass">Pass</td>
+        <td>Blink: abort() should not be called in this case.</td>
+      </tr>
+      <tr>
+        <td><a href="http://w3c-test.org/web-platform-tests/master/XMLHttpRequest/abort-after-send.htm">abort-after-send.htm</a></td>
+        <td class="webkit notperformed">-</td>
+        <td class="blink fail"><a href="about:blank">Fail</a></td>
+        <td class="gecko fail"><a href="about:blank">Fail</a></td>
+        <td class="trident fail"><a href="about:blank">Fail</a></td>
+        <td class="presto fail"><a href="about:blank">Fail</a></td>
+        <td>-</td>
+      </tr>
+      <tr>
+        <td><a href="http://w3c-test.org/web-platform-tests/master/XMLHttpRequest/abort-after-timeout.htm">abort-after-timeout.htm</a></td>
+        <td class="webkit notperformed">-</td>
+        <td class="blink fail"><a href="about:blank">Fail</a></td>
+        <td class="gecko pass">Pass</td>
+        <td class="trident fail"><a href="about:blank">Fail</a></td>
+        <td class="presto pass">Pass</td>
+        <td>Blink, Trident: abort() should not be called in this case.</td>
+      </tr>
+      <tr>
+        <td><a href="http://w3c-test.org/web-platform-tests/master/XMLHttpRequest/abort-during-done.htm">abort-during-done.htm</a></td>
+        <td class="webkit notperformed">-</td>
+        <td class="blink pass">Pass</td>
+        <td class="gecko pass">Pass</td>
+        <td class="trident pass">Pass</td>
+        <td class="presto fail"><a href="about:blank">Fail</a></td>
+        <td>-</td>
+      </tr>
+      <tr>
+        <td><a href="http://w3c-test.org/web-platform-tests/master/XMLHttpRequest/abort-during-open.htm">abort-during-open.htm</a></td>
+        <td class="webkit notperformed">-</td>
+        <td class="blink pass">Pass</td>
+        <td class="gecko fail"><a href="about:blank">Fail</a></td>
+        <td class="trident pass">Pass</td>
+        <td class="presto pass">Pass</td>
+        <td>Gecko: exception should be checked.</td>
+      </tr>
+      <tr>
+        <td><a href="http://w3c-test.org/web-platform-tests/master/XMLHttpRequest/abort-during-unsent.htm">abort-during-unsent.htm</a></td>
+        <td class="webkit notperformed">-</td>
+        <td class="blink pass">Pass</td>
+        <td class="gecko pass">Pass</td>
+        <td class="trident pass">Pass</td>
+        <td class="presto pass">Pass</td>
+        <td>-</td>
+      </tr>
+      <tr>
+        <td><a href="http://w3c-test.org/web-platform-tests/master/XMLHttpRequest/abort-during-upload.htm">abort-during-upload.htm</a></td>
+        <td class="webkit notperformed">-</td>
+        <td class="blink fail"><a href="about:blank">Fail</a></td>
+        <td class="gecko fail"><a href="about:blank">Fail</a></td>
+        <td class="trident fail"><a href="about:blank">Fail</a></td>
+        <td class="presto fail"><a href="about:blank">Fail</a></td>
+        <td>-</td>
+      </tr>
+      <tr>
+        <td><a href="http://w3c-test.org/web-platform-tests/master/XMLHttpRequest/abort-event-abort.htm">abort-event-abort.htm</a></td>
+        <td class="webkit notperformed">-</td>
+        <td class="blink fail"><a href="about:blank">Fail</a></td>
+        <td class="gecko fail"><a href="about:blank">Fail</a></td>
+        <td class="trident pass">Pass</td>
+        <td class="presto pass">Pass</td>
+        <td>Blink: abort() should not be called in this case<br> Gecko: exception should be checked.</td>
+      </tr>
+      <tr>
+        <td><a href="http://w3c-test.org/web-platform-tests/master/XMLHttpRequest/abort-event-listeners.htm">abort-event-listeners.htm*</a></td>
+        <td class="webkit notperformed">-</td>
+        <td class="blink pass">Pass</td>
+        <td class="gecko pass">Pass</td>
+        <td class="trident pass">Pass</td>
+        <td class="presto pass">Pass</td>
+        <td>TC required?</td>
+      </tr>
+      <tr>
+        <td><a href="http://w3c-test.org/web-platform-tests/master/XMLHttpRequest/abort-event-loadend.htm">abort-event-loadend.htm</a></td>
+        <td class="webkit notperformed">-</td>
+        <td class="blink pass">Pass</td>
+        <td class="gecko pass">Pass</td>
+        <td class="trident pass">Pass</td>
+        <td class="presto pass">Pass</td>
+        <td>-</td>
+      </tr>
+      <tr>
+        <td><a href="http://w3c-test.org/web-platform-tests/master/XMLHttpRequest/abort-event-order.htm">abort-event-order.htm*</a></td>
+        <td class="webkit notperformed">-</td>
+        <td class="blink fail"><a href="about:blank">Fail</a></td>
+        <td class="gecko fail"><a href="about:blank">Fail</a></td>
+        <td class="trident fail"><a href="about:blank">Fail</a></td>
+        <td class="presto fail"><a href="about:blank">Fail</a></td>
+        <td>TC: need to add progress events and change the event order to the upload object and xhr object.</td>
+      </tr>
+      <tr>
+        <td><a href="http://w3c-test.org/web-platform-tests/master/XMLHttpRequest/abort-upload-event-abort.htm">abort-upload-event-abort.htm</a></td>
+        <td class="webkit notperformed">-</td>
+        <td class="blink pass">Pass</td>
+        <td class="gecko fail"><a href="about:blank">Fail</a></td>
+        <td class="trident fail"><a href="about:blank">Fail</a></td>
+        <td class="presto fail"><a href="about:blank">Fail</a></td>
+        <td>-</td>
+      </tr>
+      <tr>
+        <td><a href="http://w3c-test.org/web-platform-tests/master/XMLHttpRequest/abort-upload-event-loadend.htm">abort-upload-event-loadend.htm</a></td>
+        <td class="webkit notperformed">-</td>
+        <td class="blink pass">Pass</td>
+        <td class="gecko fail"><a href="about:blank">Fail</a></td>
+        <td class="trident fail"><a href="about:blank">Fail</a></td>
+        <td class="presto fail"><a href="about:blank">Fail</a></td>
+        <td>-</td>
+      </tr>
+      <tr>
+        <td><a href="http://w3c-test.org/web-platform-tests/master/XMLHttpRequest/data-uri-basic.htm">data-uri-basic.htm</a></td>
+        <td class="webkit notperformed">-</td>
+        <td class="blink fail"><a href="about:blank">Fail</a></td>
+        <td class="gecko fail"><a href="about:blank">Fail(Partial)</a></td>
+        <td class="trident fail"><a href="about:blank">Fail</a></td>
+        <td class="presto fail"><a href="about:blank">Fail(Partial)</a></td>
+        <td>Not supported in Level 1.</td>
+      </tr>
+      <tr>
+        <td><a href="http://w3c-test.org/web-platform-tests/master/XMLHttpRequest/data-uri.htm">data-uri.htm</a></td>
+        <td class="webkit notperformed">-</td>
+        <td class="blink fail"><a href="about:blank">Fail</a></td>
+        <td class="gecko fail"><a href="about:blank">Fail</a></td>
+        <td class="trident fail"><a href="about:blank">Fail</a></td>
+        <td class="presto fail"><a href="about:blank">Fail</a></td>
+        <td>Not supported in Level 1.</td>
+      </tr>
+      <tr>
+        <td><a href="http://w3c-test.org/web-platform-tests/master/XMLHttpRequest/event-abort.htm">event-abort.htm</a></td>
+        <td class="webkit notperformed">-</td>
+        <td class="blink pass">Pass</td>
+        <td class="gecko pass">Pass</td>
+        <td class="trident pass">Pass</td>
+        <td class="presto pass">Pass</td>
+        <td>-</td>
+      </tr>
+      <tr>
+        <td><a href="http://w3c-test.org/web-platform-tests/master/XMLHttpRequest/event-load.htm">event-load.htm</a></td>
+        <td class="webkit notperformed">-</td>
+        <td class="blink pass">Pass</td>
+        <td class="gecko pass">Pass</td>
+        <td class="trident pass">Pass</td>
+        <td class="presto pass">Pass</td>
+        <td>-</td>
+      </tr>
+      <tr>
+        <td><a href="http://w3c-test.org/web-platform-tests/master/XMLHttpRequest/event-loadend.htm">event-loadend.htm</a></td>
+        <td class="webkit notperformed">-</td>
+        <td class="blink pass">Pass</td>
+        <td class="gecko pass">Pass</td>
+        <td class="trident pass">Pass</td>
+        <td class="presto pass">Pass</td>
+        <td>-</td>
+      </tr>
+      <tr>
+        <td><a href="http://w3c-test.org/web-platform-tests/master/XMLHttpRequest/event-loadstart.htm">event-loadstart.htm</a></td>
+        <td class="webkit notperformed">-</td>
+        <td class="blink pass">Pass</td>
+        <td class="gecko pass">Pass</td>
+        <td class="trident pass">Pass</td>
+        <td class="presto pass">Pass</td>
+        <td>-</td>
+      </tr>
+      <tr>
+        <td><a href="http://w3c-test.org/web-platform-tests/master/XMLHttpRequest/event-progress.htm">event-progress.htm</a></td>
+        <td class="webkit notperformed">-</td>
+        <td class="blink pass">Pass</td>
+        <td class="gecko pass">Pass</td>
+        <td class="trident pass">Pass</td>
+        <td class="presto pass">Pass</td>
+        <td>-</td>
+      </tr>
+      <tr>
+        <td><a href="http://w3c-test.org/web-platform-tests/master/XMLHttpRequest/event-readystatechange-loaded.htm">event-readystatechange-loaded.htm</a></td>
+        <td class="webkit notperformed">-</td>
+        <td class="blink fail"><a href="about:blank">Fail</a></td>
+        <td class="gecko fail"><a href="about:blank">Fail</a></td>
+        <td class="trident fail"><a href="about:blank">Fail</a></td>
+        <td class="presto pass">Pass</td>
+        <td>All except Presto: fire multiple "LOADING"</td>
+      </tr>
+      <tr>
+        <td><a href="http://w3c-test.org/web-platform-tests/master/XMLHttpRequest/event-timeout.htm">event-timeout.htm</a></td>
+        <td class="webkit notperformed">-</td>
+        <td class="blink pass">Pass</td>
+        <td class="gecko pass">Pass</td>
+        <td class="trident fail"><a href="about:blank">Fail</a></td>
+        <td class="presto pass">Pass</td>
+        <td>Trident: throws InvalidStateError</td>
+      </tr>
+      <tr>
+        <td><a href="http://w3c-test.org/web-platform-tests/master/XMLHttpRequest/event-upload-progress.htm">event-upload-progress.htm</a></td>
+        <td class="webkit notperformed">-</td>
+        <td class="blink pass">Pass</td>
+        <td class="gecko fail"><a href="about:blank">Fail</a></td>
+        <td class="trident pass">Pass</td>
+        <td class="presto pass">Pass</td>
+        <td>Gecko: does not fire progress event during upload</td>
+      </tr>
+      <tr>
+        <td><a href="http://w3c-test.org/web-platform-tests/master/XMLHttpRequest/formdata-blob.htm">formdata-blob.htm</a></td>
+        <td class="webkit notperformed">-</td>
+        <td class="blink pass">Pass</td>
+        <td class="gecko pass">Pass</td>
+        <td class="trident pass">Pass</td>
+        <td class="presto fail"><a href="about:blank">Fail</a></td>
+        <td>-</td>
+      </tr>
+      <tr>
+        <td><a href="http://w3c-test.org/web-platform-tests/master/XMLHttpRequest/formdata.htm">formdata.htm</a></td>
+        <td class="webkit notperformed">-</td>
+        <td class="blink pass">Pass</td>
+        <td class="gecko notrun"><a href="about:blank">NotRun</a></td>
+        <td class="trident pass">Pass</td>
+        <td class="presto pass">Pass</td>
+        <td>Gecko: TypeError</td>
+      </tr>
+      <tr>
+        <td><a href="http://w3c-test.org/web-platform-tests/master/XMLHttpRequest/getallresponseheaders-cookies.htm">getallresponseheaders-cookies.htm</a></td>
+        <td class="webkit notperformed">-</td>
+        <td class="blink fail"><a href="about:blank">Fail</a></td>
+        <td class="gecko pass">Pass</td>
+        <td class="trident pass">Pass</td>
+        <td class="presto pass">Pass</td>
+        <td>Blink: need to address to not throw but return empty string.</td>
+      </tr>
+      <tr>
+        <td><a href="http://w3c-test.org/web-platform-tests/master/XMLHttpRequest/getallresponseheaders-status.htm">getallresponseheaders-status.htm</a></td>
+        <td class="webkit notperformed">-</td>
+        <td class="blink fail"><a href="about:blank">Fail</a></td>
+        <td class="gecko pass">Pass</td>
+        <td class="trident pass">Pass</td>
+        <td class="presto pass">Pass</td>
+        <td>Blink: need to address to not throw but return empty string.</td>
+      </tr>
+      <tr>
+        <td><a href="http://w3c-test.org/web-platform-tests/master/XMLHttpRequest/getresponseheader-case-insensitive.htm">getresponseheader-case-insensitive.htm</a></td>
+        <td class="webkit notperformed">-</td>
+        <td class="blink pass">Pass</td>
+        <td class="gecko pass">Pass</td>
+        <td class="trident pass">Pass</td>
+        <td class="presto pass">Pass</td>
+        <td>-</td>
+      </tr>
+      <tr>
+        <td><a href="http://w3c-test.org/web-platform-tests/master/XMLHttpRequest/getresponseheader-chunked-trailer.htm">getresponseheader-chunked-trailer.htm</a></td>
+        <td class="webkit notperformed">-</td>
+        <td class="blink pass">Pass</td>
+        <td class="gecko pass">Pass</td>
+        <td class="trident pass">Pass</td>
+        <td class="presto fail"><a href="about:blank">Fail</a></td>
+        <td>-</td>
+      </tr>
+      <tr>
+        <td><a href="http://w3c-test.org/web-platform-tests/master/XMLHttpRequest/getresponseheader-cookies-and-more.htm">getresponseheader-cookies-and-more.htm</a></td>
+        <td class="webkit notperformed">-</td>
+        <td class="blink fail"><a href="about:blank">Fail</a></td>
+        <td class="gecko fail"><a href="about:blank">Fail</a></td>
+        <td class="trident pass">Pass</td>
+        <td class="presto pass">Pass</td>
+        <td>Blink: need to address to not throw but return null<br> Gecko: existing header with empty value?</td>
+      </tr>
+      <tr>
+        <td><a href="http://w3c-test.org/web-platform-tests/master/XMLHttpRequest/getresponseheader-error-state.htm">getresponseheader-error-state.htm</a></td>
+        <td class="webkit notperformed">-</td>
+        <td class="blink fail"><a href="about:blank">Fail</a></td>
+        <td class="gecko pass">Pass</td>
+        <td class="trident pass">Pass</td>
+        <td class="presto pass">Pass</td>
+        <td>Better to check valid response header in error case?</td>
+      </tr>
+      <tr>
+        <td><a href="http://w3c-test.org/web-platform-tests/master/XMLHttpRequest/getresponseheader-server-date.htm">getresponseheader-server-date.htm</a></td>
+        <td class="webkit notperformed">-</td>
+        <td class="blink pass">Pass</td>
+        <td class="gecko pass">Pass</td>
+        <td class="trident pass">Pass</td>
+        <td class="presto pass">Pass</td>
+        <td>-</td>
+      </tr>
+      <tr>
+        <td><a href="http://w3c-test.org/web-platform-tests/master/XMLHttpRequest/getresponseheader-special-characters.htm">getresponseheader-special-characters.htm</a></td>
+        <td class="webkit notperformed">-</td>
+        <td class="blink pass">Pass</td>
+        <td class="gecko pass">Pass</td>
+        <td class="trident fail"><a href="about:blank">Fail</a></td>
+        <td class="presto pass">Pass</td>
+        <td>Trident: ignore white space in the header name.</td>
+      </tr>
+      <tr>
+        <td><a href="http://w3c-test.org/web-platform-tests/master/XMLHttpRequest/getresponseheader-unsent-opened-state.htm">getresponseheader-unsent-opened-state.htm</a></td>
+        <td class="webkit notperformed">-</td>
+        <td class="blink fail"><a href="about:blank">Fail</a></td>
+        <td class="gecko pass">Pass</td>
+        <td class="trident pass">Pass</td>
+        <td class="presto pass">Pass</td>
+        <td>Blink: need to address to not throw but return null.</td>
+      </tr>
+      <tr>
+        <td><a href="http://w3c-test.org/web-platform-tests/master/XMLHttpRequest/open-after-abort.htm">open-after-abort.htm</a></td>
+        <td class="webkit notperformed">-</td>
+        <td class="blink pass">Pass</td>
+        <td class="gecko pass">Pass</td>
+        <td class="trident fail"><a href="about:blank">Fail</a></td>
+        <td class="presto pass">Pass</td>
+        <td>Trident: has one more readystatechange e with readyState === 1.</td>
+      </tr>
+      <tr>
+        <td><a href="http://w3c-test.org/web-platform-tests/master/XMLHttpRequest/open-after-setrequestheader.htm">open-after-setrequestheader.htm</a></td>
+        <td class="webkit notperformed">-</td>
+        <td class="blink pass">Pass</td>
+        <td class="gecko pass">Pass</td>
+        <td class="trident pass">Pass</td>
+        <td class="presto pass">Pass</td>
+        <td>-</td>
+      </tr>
+      <tr>
+        <td><a href="http://w3c-test.org/web-platform-tests/master/XMLHttpRequest/open-method-bogus.htm">open-method-bogus.htm</a></td>
+        <td class="webkit notperformed">-</td>
+        <td class="blink pass">Pass</td>
+        <td class="gecko fail"><a href="about:blank">Fail</a></td>
+        <td class="trident pass">Pass</td>
+        <td class="presto pass">Pass</td>
+        <td>Gecko: exception should be checked.</td>
+      </tr>
+      <tr>
+        <td><a href="http://w3c-test.org/web-platform-tests/master/XMLHttpRequest/open-method-case-insensitive.htm">open-method-case-insensitive.htm</a></td>
+        <td class="webkit notperformed">-</td>
+        <td class="blink pass">Pass</td>
+        <td class="gecko pass">Pass</td>
+        <td class="trident pass">Pass</td>
+        <td class="presto pass">Pass</td>
+        <td>-</td>
+      </tr>
+      <tr>
+        <td><a href="http://w3c-test.org/web-platform-tests/master/XMLHttpRequest/open-method-case-sensitive.htm">open-method-case-sensitive.htm</a></td>
+        <td class="webkit notperformed">-</td>
+        <td class="blink fail"><a href="about:blank">Fail(Partial)</a></td>
+        <td class="gecko fail"><a href="about:blank">Fail(Partial)</a></td>
+        <td class="trident pass">Pass</td>
+        <td class="presto pass">Pass</td>
+        <td>Blink, Gecko: return modified values.</td>
+      </tr>
+      <tr>
+        <td><a href="http://w3c-test.org/web-platform-tests/master/XMLHttpRequest/open-method-insecure.htm">open-method-insecure.htm</a></td>
+        <td class="webkit notperformed">-</td>
+        <td class="blink pass">Pass</td>
+        <td class="gecko fail"><a href="about:blank">Fail</a></td>
+        <td class="trident pass">Pass</td>
+        <td class="presto pass">Pass</td>
+        <td>Gecko: exception should be checked; does not throw for CONNECT.</td>
+      </tr>
+      <tr>
+        <td><a href="http://w3c-test.org/web-platform-tests/master/XMLHttpRequest/open-method-responsetype-set-sync.htm">open-method-responsetype-set-sync.htm</a></td>
+        <td class="webkit notperformed">-</td>
+        <td class="blink pass">Pass</td>
+        <td class="gecko fail"><a href="about:blank">Fail</a></td>
+        <td class="trident fail"><a href="about:blank">Fail</a></td>
+        <td class="presto fail"><a href="about:blank">Fail</a></td>
+        <td>Gecko, Trident, Presto: need to address<br> Trident: throws InvalidStateError.</td>
+      </tr>
+      <tr>
+        <td><a href="http://w3c-test.org/web-platform-tests/master/XMLHttpRequest/open-open-send.htm">open-open-send.htm</a></td>
+        <td class="webkit notperformed">-</td>
+        <td class="blink pass">Pass</td>
+        <td class="gecko fail"><a href="about:blank">Fail</a></td>
+        <td class="trident fail"><a href="about:blank">Fail</a></td>
+        <td class="presto pass">Pass</td>
+        <td>Gecko, Trident: need to address; readystatechange fires for open-open.</td>
+      </tr>
+      <tr>
+        <td><a href="http://w3c-test.org/web-platform-tests/master/XMLHttpRequest/open-open-sync-send.htm">open-open-sync-send.htm</a></td>
+        <td class="webkit notperformed">-</td>
+        <td class="blink pass">Pass</td>
+        <td class="gecko fail"><a href="about:blank">Fail</a></td>
+        <td class="trident fail"><a href="about:blank">Fail</a></td>
+        <td class="presto fail"><a href="about:blank">Fail</a></td>
+        <td>Gecko, Trident: need to address; readystatechange fires for open-open.<br> Presto: need to address.</td>
+      </tr>
+      <tr>
+        <td><a href="http://w3c-test.org/web-platform-tests/master/XMLHttpRequest/open-referer.htm">open-referer.htm</a></td>
+        <td class="webkit notperformed">-</td>
+        <td class="blink pass">Pass</td>
+        <td class="gecko pass">Pass</td>
+        <td class="trident pass">Pass</td>
+        <td class="presto pass">Pass</td>
+        <td>-</td>
+      </tr>
+      <tr>
+        <td><a href="http://w3c-test.org/web-platform-tests/master/XMLHttpRequest/open-send-open.htm">open-send-open.htm</a></td>
+        <td class="webkit notperformed">-</td>
+        <td class="blink pass">Pass</td>
+        <td class="gecko fail"><a href="about:blank">Fail</a></td>
+        <td class="trident fail"><a href="about:blank">Fail</a></td>
+        <td class="presto fail"><a href="about:blank">Fail</a></td>
+        <td>Gecko, Trident: need to address; FF fires 1 4 1 and IE fires 1 1 1 while 1 is expected.</td>
+      </tr>
+      <tr>
+        <td><a href="http://w3c-test.org/web-platform-tests/master/XMLHttpRequest/open-sync-open-send.htm">open-sync-open-send.htm</a></td>
+        <td class="webkit notperformed">-</td>
+        <td class="blink fail"><a href="about:blank">Fail</a></td>
+        <td class="gecko fail"><a href="about:blank">Fail</a></td>
+        <td class="trident fail"><a href="about:blank">Fail</a></td>
+        <td class="presto fail"><a href="about:blank">Fail</a></td>
+        <td>Blink: xhr.status must return 0 if the state is OPENED rather than raise error<br> Gecko, Trident: need to address; FF fires 1 4 1 and IE fires 1 1 1 while 1 is expected.</td>
+      </tr>
+      <tr>
+        <td><a href="http://w3c-test.org/web-platform-tests/master/XMLHttpRequest/open-url-about-blank-window.htm">open-url-about-blank-window.htm</a></td>
+        <td class="webkit notperformed">-</td>
+        <td class="blink pass">Pass</td>
+        <td class="gecko pass">Pass</td>
+        <td class="trident pass">Pass</td>
+        <td class="presto fail"><a href="about:blank">Fail</a></td>
+        <td>Presto: need to address.</td>
+      </tr>
+      <tr>
+        <td><a href="http://w3c-test.org/web-platform-tests/master/XMLHttpRequest/open-url-base-inserted-after-open.htm">open-url-base-inserted-after-open.htm</a></td>
+        <td class="webkit notperformed">-</td>
+        <td class="blink pass">Pass</td>
+        <td class="gecko pass">Pass</td>
+        <td class="trident pass">Pass</td>
+        <td class="presto pass">Pass</td>
+        <td>-</td>
+      </tr>
+      <tr>
+        <td><a href="http://w3c-test.org/web-platform-tests/master/XMLHttpRequest/open-url-base-inserted.htm">open-url-base-inserted.htm</a></td>
+        <td class="webkit notperformed">-</td>
+        <td class="blink pass">Pass</td>
+        <td class="gecko pass">Pass</td>
+        <td class="trident pass">Pass</td>
+        <td class="presto pass">Pass</td>
+        <td>-</td>
+      </tr>
+      <tr>
+        <td><a href="http://w3c-test.org/web-platform-tests/master/XMLHttpRequest/open-url-base.htm">open-url-base.htm</a></td>
+        <td class="webkit notperformed">-</td>
+        <td class="blink pass">Pass</td>
+        <td class="gecko pass">Pass</td>
+        <td class="trident pass">Pass</td>
+        <td class="presto pass">Pass</td>
+        <td>-</td>
+      </tr>
+      <tr>
+        <td><a href="http://w3c-test.org/web-platform-tests/master/XMLHttpRequest/open-url-bogus.htm">open-url-bogus.htm*</a></td>
+        <td class="webkit notperformed">-</td>
+        <td class="blink fail"><a href="about:blank">Fail</a></td>
+        <td class="gecko fail"><a href="about:blank">Fail</a></td>
+        <td class="trident fail"><a href="about:blank">Fail</a></td>
+        <td class="presto fail"><a href="about:blank">Fail</a></td>
+        <td>Further TC examination required: "http:"<br> Blink: does not throw.<br> Gecko: exception should be checked; "http:" parsing should be checked.</td>
+      </tr>
+      <tr>
+        <td><a href="http://w3c-test.org/web-platform-tests/master/XMLHttpRequest/open-url-encoding.htm">open-url-encoding.htm</a></td>
+        <td class="webkit notperformed">-</td>
+        <td class="blink fail"><a href="about:blank">Fail</a></td>
+        <td class="gecko pass">Pass</td>
+        <td class="trident fail"><a href="about:blank">Fail</a></td>
+        <td class="presto pass">Pass</td>
+        <td>Check the encoded string.</td>
+      </tr>
+      <tr>
+        <td><a href="http://w3c-test.org/web-platform-tests/master/XMLHttpRequest/open-url-fragment.htm">open-url-fragment.htm</a></td>
+        <td class="webkit notperformed">-</td>
+        <td class="blink pass">Pass</td>
+        <td class="gecko pass">Pass</td>
+        <td class="trident fail"><a href="about:blank">Fail(Partial)</a></td>
+        <td class="presto pass">Pass</td>
+        <td>Trident: need to address.</td>
+      </tr>
+      <tr>
+        <td><a href="http://w3c-test.org/web-platform-tests/master/XMLHttpRequest/open-url-javascript-window-2.htm">open-url-javascript-window-2.htm</a></td>
+        <td class="webkit notperformed">-</td>
+        <td class="blink pass">Pass</td>
+        <td class="gecko pass">Pass</td>
+        <td class="trident pass">Pass</td>
+        <td class="presto fail"><a href="about:blank">Fail</a></td>
+        <td>Presto: need to address.</td>
+      </tr>
+      <tr>
+        <td><a href="http://w3c-test.org/web-platform-tests/master/XMLHttpRequest/open-url-javascript-window.htm">open-url-javascript-window.htm</a></td>
+        <td class="webkit notperformed">-</td>
+        <td class="blink pass">Pass</td>
+        <td class="gecko pass">Pass</td>
+        <td class="trident pass">Pass</td>
+        <td class="presto pass">Pass</td>
+        <td>-</td>
+      </tr>
+      <tr>
+        <td><a href="http://w3c-test.org/web-platform-tests/master/XMLHttpRequest/open-url-multi-window-2.htm">open-url-multi-window-2.htm</a></td>
+        <td class="webkit notperformed">-</td>
+        <td class="blink fail"><a href="about:blank">Fail</a></td>
+        <td class="gecko fail"><a href="about:blank">Fail</a></td>
+        <td class="trident fail"><a href="about:blank">Fail</a></td>
+        <td class="presto fail"><a href="about:blank">Fail</a></td>
+        <td>All: need to address.<br> Blink, Trident: do not throw.<br> Gecko raises Unexpected error.</td>
+      </tr>
+      <tr>
+        <td><a href="http://w3c-test.org/web-platform-tests/master/XMLHttpRequest/open-url-multi-window-3.htm">open-url-multi-window-3.htm</a></td>
+        <td class="webkit notperformed">-</td>
+        <td class="blink fail"><a href="about:blank">Fail</a></td>
+        <td class="gecko fail"><a href="about:blank">Fail</a></td>
+        <td class="trident fail"><a href="about:blank">Fail</a></td>
+        <td class="presto fail"><a href="about:blank">Fail</a></td>
+        <td>send() with no document should be allowed or not?<br> Spec does not say anything; Hallvord made a PR to WHATWG with wording for this.</td>
+      </tr>
+      <tr>
+        <td><a href="http://w3c-test.org/web-platform-tests/master/XMLHttpRequest/open-url-multi-window-4.htm">open-url-multi-window-4.htm</a></td>
+        <td class="webkit notperformed">-</td>
+        <td class="blink timeout"><a href="about:blank">Timeout</a></td>
+        <td class="gecko timeout"><a href="about:blank">Timeout</a></td>
+        <td class="trident fail"><a href="about:blank">Fail</a></td>
+        <td class="presto timeout"><a href="about:blank">Timeout</a></td>
+        <td>send() with no document should be allowed or not?<br> Spec does not say anything; Hallvord made a PR to WHATWG with wording for this.</td>
+      </tr>
+      <tr>
+        <td><a href="http://w3c-test.org/web-platform-tests/master/XMLHttpRequest/open-url-multi-window-5.htm">open-url-multi-window-5.htm</a></td>
+        <td class="webkit notperformed">-</td>
+        <td class="blink fail"><a href="about:blank">Fail</a></td>
+        <td class="gecko fail"><a href="about:blank">Fail</a></td>
+        <td class="trident fail"><a href="about:blank">Fail</a></td>
+        <td class="presto fail"><a href="about:blank">Fail</a></td>
+        <td>open() with reloaded document should be allowed or not? Currently spec does not say anything.</td>
+      </tr>
+      <tr>
+        <td><a href="http://w3c-test.org/web-platform-tests/master/XMLHttpRequest/open-url-multi-window.htm">open-url-multi-window.htm</a></td>
+        <td class="webkit notperformed">-</td>
+        <td class="blink pass">Pass</td>
+        <td class="gecko pass">Pass</td>
+        <td class="trident pass">Pass</td>
+        <td class="presto pass">Pass</td>
+        <td>-</td>
+      </tr>
+      <tr>
+        <td><a href="http://w3c-test.org/web-platform-tests/master/XMLHttpRequest/open-url-worker-origin.htm">open-url-worker-origin.htm</a></td>
+        <td class="webkit notperformed">-</td>
+        <td class="blink pass">Pass</td>
+        <td class="gecko pass">Pass</td>
+        <td class="trident pass">Pass</td>
+        <td class="presto pass">Pass</td>
+        <td>-</td>
+      </tr>
+      <tr>
+        <td><a href="http://w3c-test.org/web-platform-tests/master/XMLHttpRequest/open-url-worker-simple.htm">open-url-worker-simple.htm</a></td>
+        <td class="webkit notperformed">-</td>
+        <td class="blink pass">Pass</td>
+        <td class="gecko pass">Pass</td>
+        <td class="trident pass">Pass</td>
+        <td class="presto pass">Pass</td>
+        <td>-</td>
+      </tr>
+      <tr>
+        <td><a href="http://w3c-test.org/web-platform-tests/master/XMLHttpRequest/open-user-password-non-same-origin.htm">open-user-password-non-same-origin.htm</a></td>
+        <td class="webkit notperformed">-</td>
+        <td class="blink pass">Pass</td>
+        <td class="gecko pass">Pass</td>
+        <td class="trident fail"><a href="about:blank">Fail</a></td>
+        <td class="presto pass">Pass</td>
+        <td>Trident: need to address.</td>
+      </tr>
+      <tr>
+        <td><a href="http://w3c-test.org/web-platform-tests/master/XMLHttpRequest/overridemimetype-done-state.htm">overridemimetype-done-state.htm</a></td>
+        <td class="webkit notperformed">-</td>
+        <td class="blink fail"><a href="about:blank">Fail</a></td>
+        <td class="gecko fail"><a href="about:blank">Fail</a></td>
+        <td class="trident fail"><a href="about:blank">Fail</a></td>
+        <td class="presto fail"><a href="about:blank">Fail</a></td>
+        <td>Blink, Gecko: does not throw in state 4.<br> Trident: TypeError rather than InvalidStateError.</td>
+      </tr>
+      <tr>
+        <td><a href="http://w3c-test.org/web-platform-tests/master/XMLHttpRequest/overridemimetype-headers-received-state-force-shiftjis.htm">overridemimetype-headers-received-state-force-shiftjis.htm</a></td>
+        <td class="webkit notperformed">-</td>
+        <td class="blink fail"><a href="about:blank">Fail</a></td>
+        <td class="gecko pass">Pass</td>
+        <td class="trident fail"><a href="about:blank">Fail</a></td>
+        <td class="presto fail"><a href="about:blank">Fail</a></td>
+        <td>Blink: need to address.<br> Trident: throws in state 2.</td>
+      </tr>
+      <tr>
+        <td><a href="http://w3c-test.org/web-platform-tests/master/XMLHttpRequest/overridemimetype-invalid-mime-type.htm">overridemimetype-invalid-mime-type.htm</a></td>
+        <td class="webkit notperformed">-</td>
+        <td class="blink fail"><a href="about:blank">Fail</a></td>
+        <td class="gecko fail"><a href="about:blank">Fail</a></td>
+        <td class="trident fail"><a href="about:blank">Fail</a></td>
+        <td class="presto fail"><a href="about:blank">Fail</a></td>
+        <td>Blink, Gecko: does not throw in certain case.<br> Trident: TypeError rather than SyntaxError. Spec needs change for TypeError?</td>
+      </tr>
+      <tr>
+        <td><a href="http://w3c-test.org/web-platform-tests/master/XMLHttpRequest/overridemimetype-loading-state.htm">overridemimetype-loading-state.htm</a></td>
+        <td class="webkit notperformed">-</td>
+        <td class="blink notrun"><a href="about:blank">NotRun</a></td>
+        <td class="gecko notrun"><a href="about:blank">NotRun</a></td>
+        <td class="trident notrun"><a href="about:blank">NotRun</a></td>
+        <td class="presto notrun"><a href="about:blank">NotRun</a></td>
+        <td>Harness error?</td>
+      </tr>
+      <tr>
+        <td><a href="http://w3c-test.org/web-platform-tests/master/XMLHttpRequest/overridemimetype-open-state-force-utf-8.htm">overridemimetype-open-state-force-utf-8.htm</a></td>
+        <td class="webkit notperformed">-</td>
+        <td class="blink pass">Pass</td>
+        <td class="gecko pass">Pass</td>
+        <td class="trident fail"><a href="about:blank">Fail</a></td>
+        <td class="presto pass">Pass</td>
+        <td>Trident: overrideMimeType not supported.</td>
+      </tr>
+      <tr>
+        <td><a href="http://w3c-test.org/web-platform-tests/master/XMLHttpRequest/overridemimetype-open-state-force-xml.htm">overridemimetype-open-state-force-xml.htm</a></td>
+        <td class="webkit notperformed">-</td>
+        <td class="blink pass">Pass</td>
+        <td class="gecko pass">Pass</td>
+        <td class="trident fail"><a href="about:blank">Fail</a></td>
+        <td class="presto pass">Pass</td>
+        <td>Trident: overrideMimeType not supported.</td>
+      </tr>
+      <tr>
+        <td><a href="http://w3c-test.org/web-platform-tests/master/XMLHttpRequest/overridemimetype-unsent-state-force-shiftjis.htm">overridemimetype-unsent-state-force-shiftjis.htm</a></td>
+        <td class="webkit notperformed">-</td>
+        <td class="blink pass">Pass</td>
+        <td class="gecko pass">Pass</td>
+        <td class="trident fail"><a href="about:blank">Fail</a></td>
+        <td class="presto pass">Pass</td>
+        <td>Trident: overrideMimeType not supported.</td>
+      </tr>
+      <tr>
+        <td><a href="http://w3c-test.org/web-platform-tests/master/XMLHttpRequest/response-data-arraybuffer.htm">response-data-arraybuffer.htm</a></td>
+        <td class="webkit notperformed">-</td>
+        <td class="blink pass">Pass</td>
+        <td class="gecko pass">Pass</td>
+        <td class="trident pass">Pass</td>
+        <td class="presto pass">Pass</td>
+        <td>-</td>
+      </tr>
+      <tr>
+        <td><a href="http://w3c-test.org/web-platform-tests/master/XMLHttpRequest/response-data-blob.htm">response-data-blob.htm</a></td>
+        <td class="webkit notperformed">-</td>
+        <td class="blink pass">Pass</td>
+        <td class="gecko pass">Pass</td>
+        <td class="trident pass">Pass</td>
+        <td class="presto pass">Pass</td>
+        <td>-</td>
+      </tr>
+      <tr>
+        <td><a href="http://w3c-test.org/web-platform-tests/master/XMLHttpRequest/response-data-gzip.htm">response-data-gzip.htm*</a></td>
+        <td class="webkit notperformed">-</td>
+        <td class="blink pass">Pass</td>
+        <td class="gecko pass">Pass</td>
+        <td class="trident fail"><a href="about:blank">Fail</a></td>
+        <td class="presto pass">Pass</td>
+        <td>Trident: need to address; TC relevant?</td>
+      </tr>
+      <tr>
+        <td><a href="http://w3c-test.org/web-platform-tests/master/XMLHttpRequest/response-data-progress.htm">response-data-progress.htm</a></td>
+        <td class="webkit notperformed">-</td>
+        <td class="blink pass">Pass</td>
+        <td class="gecko pass">Pass</td>
+        <td class="trident pass">Pass</td>
+        <td class="presto pass">Pass</td>
+        <td>-</td>
+      </tr>
+      <tr>
+        <td><a href="http://w3c-test.org/web-platform-tests/master/XMLHttpRequest/response-json.htm">response-json.htm*</a></td>
+        <td class="webkit notperformed">-</td>
+        <td class="blink fail"><a href="about:blank">Fail</a></td>
+        <td class="gecko fail"><a href="about:blank">Fail</a></td>
+        <td class="trident fail"><a href="about:blank">Fail</a></td>
+        <td class="presto pass">Pass</td>
+        <td>Not supported in Level 1. TC error?</td>
+      </tr>
+      <tr>
+        <td><a href="http://w3c-test.org/web-platform-tests/master/XMLHttpRequest/responsetext-decoding.htm">responsetext-decoding.htm</a></td>
+        <td class="webkit notperformed">-</td>
+        <td class="blink fail"><a href="about:blank">Fail(Partial)</a></td>
+        <td class="gecko fail"><a href="about:blank">Fail(Partial)</a></td>
+        <td class="trident fail"><a href="about:blank">Fail(Partial)</a></td>
+        <td class="presto fail"><a href="about:blank">Fail(Partial)</a></td>
+        <td>-</td>
+      </tr>
+      <tr>
+        <td><a href="http://w3c-test.org/web-platform-tests/master/XMLHttpRequest/responsetype.html">responsetype.html*</a></td>
+        <td class="webkit notperformed">-</td>
+        <td class="blink pass">Pass</td>
+        <td class="gecko pass">Pass</td>
+        <td class="trident fail"><a href="about:blank">Fail(Partial)</a></td>
+        <td class="presto pass">Pass</td>
+        <td>Trident: fails with "json".<br> TC needs correction.</td>
+      </tr>
+      <tr>
+        <td><a href="http://w3c-test.org/web-platform-tests/master/XMLHttpRequest/responsexml-basic.htm">responsexml-basic.htm</a></td>
+        <td class="webkit notperformed">-</td>
+        <td class="blink fail"><a href="about:blank">Fail(Partial)</a></td>
+        <td class="gecko fail"><a href="about:blank">Fail(Partial)</a></td>
+        <td class="trident pass">Pass</td>
+        <td class="presto fail"><a href="about:blank">Fail(Partial)</a></td>
+        <td>-</td>
+      </tr>
+      <tr>
+        <td><a href="http://w3c-test.org/web-platform-tests/master/XMLHttpRequest/responsexml-document-properties.htm">responsexml-document-properties.htm</a></td>
+        <td class="webkit notperformed">-</td>
+        <td class="blink fail"><a href="about:blank">Fail(Partial)</a></td>
+        <td class="gecko fail"><a href="about:blank">Fail(Partial)</a></td>
+        <td class="trident fail"><a href="about:blank">Fail(Partial)</a></td>
+        <td class="presto fail"><a href="about:blank">Fail(Partial)</a></td>
+        <td>-</td>
+      </tr>
+      <tr>
+        <td><a href="http://w3c-test.org/web-platform-tests/master/XMLHttpRequest/responsexml-media-type.htm">responsexml-media-type.htm</a></td>
+        <td class="webkit notperformed">-</td>
+        <td class="blink fail"><a href="about:blank">Fail(Partial)</a></td>
+        <td class="gecko fail"><a href="about:blank">Fail(Partial)</a></td>
+        <td class="trident fail"><a href="about:blank">Fail(Partial)</a></td>
+        <td class="presto fail"><a href="about:blank">Fail(Partial)</a></td>
+        <td>-</td>
+      </tr>
+      <tr>
+        <td><a href="http://w3c-test.org/web-platform-tests/master/XMLHttpRequest/responsexml-non-document-types.htm">responsexml-non-document-types.htm</a></td>
+        <td class="webkit notperformed">-</td>
+        <td class="blink fail"><a href="about:blank">Fail</a></td>
+        <td class="gecko fail"><a href="about:blank">Fail</a></td>
+        <td class="trident fail"><a href="about:blank">Fail</a></td>
+        <td class="presto pass">Pass</td>
+        <td>-</td>
+      </tr>
+      <tr>
+        <td><a href="http://w3c-test.org/web-platform-tests/master/XMLHttpRequest/responsexml-non-well-formed.htm">responsexml-non-well-formed.htm</a></td>
+        <td class="webkit notperformed">-</td>
+        <td class="blink pass">Pass</td>
+        <td class="gecko fail"><a href="about:blank">Fail</a></td>
+        <td class="trident pass">Pass</td>
+        <td class="presto pass">Pass</td>
+        <td>-</td>
+      </tr>
+      <tr>
+        <td><a href="http://w3c-test.org/web-platform-tests/master/XMLHttpRequest/send-accept-language.htm">send-accept-language.htm</a></td>
+        <td class="webkit notperformed">-</td>
+        <td class="blink pass">Pass</td>
+        <td class="gecko pass">Pass</td>
+        <td class="trident pass">Pass</td>
+        <td class="presto pass">Pass</td>
+        <td>-</td>
+      </tr>
+      <tr>
+        <td><a href="http://w3c-test.org/web-platform-tests/master/XMLHttpRequest/send-accept.htm">send-accept.htm</a></td>
+        <td class="webkit notperformed">-</td>
+        <td class="blink fail"><a href="about:blank">Fail</a></td>
+        <td class="gecko fail"><a href="about:blank">Fail</a></td>
+        <td class="trident pass">Pass</td>
+        <td class="presto fail"><a href="about:blank">Fail</a></td>
+        <td>Blink: setRequestHeader("Accept", custom-value); is not effective.<br> Gecko: default Accept header value is set by Browser.<br> It seems browsers have their own default Accept header; Should it be allowed to replace the value with setRequestHeader()? or append?</td>
+      </tr>
+      <tr>
+        <td><a href="http://w3c-test.org/web-platform-tests/master/XMLHttpRequest/send-after-setting-document-domain.htm">send-after-setting-document-domain.htm</a></td>
+        <td class="webkit notperformed">-</td>
+        <td class="blink pass">Pass</td>
+        <td class="gecko fail"><a href="about:blank">Fail(Partial)</a></td>
+        <td class="trident fail"><a href="about:blank">Fail(Partial)</a></td>
+        <td class="presto pass">Pass</td>
+        <td>-</td>
+      </tr>
+      <tr>
+        <td><a href="http://w3c-test.org/web-platform-tests/master/XMLHttpRequest/send-authentication-basic-cors-not-enabled.htm">send-authentication-basic-cors-not-enabled.htm*</a></td>
+        <td class="webkit notperformed">-</td>
+        <td class="blink pass">Pass</td>
+        <td class="gecko fail"><a href="about:blank">Fail</a></td>
+        <td class="trident fail"><a href="about:blank">Fail</a></td>
+        <td class="presto pass">Pass</td>
+        <td>TC error: open() should throw "InvalidAccessError".</td>
+      </tr>
+      <tr>
+        <td><a href="http://w3c-test.org/web-platform-tests/master/XMLHttpRequest/send-authentication-basic-cors.htm">send-authentication-basic-cors.htm</a></td>
+        <td class="webkit notperformed">-</td>
+        <td class="blink pass">Pass</td>
+        <td class="gecko fail"><a href="about:blank">Fail</a></td>
+        <td class="trident fail"><a href="about:blank">Fail</a></td>
+        <td class="presto pass">Pass</td>
+        <td>-</td>
+      </tr>
+      <tr>
+        <td><a href="http://w3c-test.org/web-platform-tests/master/XMLHttpRequest/send-authentication-basic-repeat-no-args.htm">send-authentication-basic-repeat-no-args.htm</a></td>
+        <td class="webkit notperformed">-</td>
+        <td class="blink pass">Pass</td>
+        <td class="gecko pass">Pass</td>
+        <td class="trident pass">Pass</td>
+        <td class="presto pass">Pass</td>
+        <td>-</td>
+      </tr>
+      <tr>
+        <td><a href="http://w3c-test.org/web-platform-tests/master/XMLHttpRequest/send-authentication-basic-setrequestheader-existing-session.htm">send-authentication-basic-setrequestheader-existing-session.htm</a></td>
+        <td class="webkit notperformed">-</td>
+        <td class="blink fail"><a href="about:blank">Fail</a></td>
+        <td class="gecko fail"><a href="about:blank">Fail</a></td>
+        <td class="trident fail"><a href="about:blank">Fail</a></td>
+        <td class="presto fail"><a href="about:blank">Fail</a></td>
+        <td>It seems the error comes from server side. File open in php code fails?</td>
+      </tr>
+      <tr>
+        <td><a href="http://w3c-test.org/web-platform-tests/master/XMLHttpRequest/send-authentication-basic-setrequestheader.htm">send-authentication-basic-setrequestheader.htm</a></td>
+        <td class="webkit notperformed">-</td>
+        <td class="blink pass">Pass</td>
+        <td class="gecko pass">Pass</td>
+        <td class="trident pass">Pass</td>
+        <td class="presto pass">Pass</td>
+        <td>-</td>
+      </tr>
+      <tr>
+        <td><a href="http://w3c-test.org/web-platform-tests/master/XMLHttpRequest/send-authentication-basic.htm">send-authentication-basic.htm</a></td>
+        <td class="webkit notperformed">-</td>
+        <td class="blink fail"><a href="about:blank">Fail</a></td>
+        <td class="gecko fail"><a href="about:blank">Fail</a></td>
+        <td class="trident fail"><a href="about:blank">Fail</a></td>
+        <td class="presto fail"><a href="about:blank">Fail</a></td>
+        <td>It seems the error comes from server side. File open in php code fails?</td>
+      </tr>
+      <tr>
+        <td><a href="http://w3c-test.org/web-platform-tests/master/XMLHttpRequest/send-authentication-competing-names-passwords.htm">send-authentication-competing-names-passwords.htm</a></td>
+        <td class="webkit notperformed">-</td>
+        <td class="blink fail"><a href="about:blank">Fail(Partial)</a></td>
+        <td class="gecko pass">Pass</td>
+        <td class="trident fail"><a href="about:blank">Fail</a></td>
+        <td class="presto fail"><a href="about:blank">Fail(Partial)</a></td>
+        <td>-</td>
+      </tr>
+      <tr>
+        <td><a href="http://w3c-test.org/web-platform-tests/master/XMLHttpRequest/send-authentication-cors-basic-setrequestheader.htm">send-authentication-cors-basic-setrequestheader.htm</a></td>
+        <td class="webkit notperformed">-</td>
+        <td class="blink fail"><a href="about:blank">Fail</a></td>
+        <td class="gecko fail"><a href="about:blank">Fail</a></td>
+        <td class="trident fail"><a href="about:blank">Fail</a></td>
+        <td class="presto fail"><a href="about:blank">Fail</a></td>
+        <td>-</td>
+      </tr>
+      <tr>
+        <td><a href="http://w3c-test.org/web-platform-tests/master/XMLHttpRequest/send-authentication-existing-session-interactive.htm">send-authentication-existing-session-interactive.htm</a></td>
+        <td class="webkit notperformed">-</td>
+        <td class="blink pass">Pass</td>
+        <td class="gecko pass">Pass</td>
+        <td class="trident pass">Pass</td>
+        <td class="presto pass">Pass</td>
+        <td>Blink, Gecko: fail when trying with the existing browser cache.</td>
+      </tr>
+      <tr>
+        <td><a href="http://w3c-test.org/web-platform-tests/master/XMLHttpRequest/send-authentication-prompt-interactive-2.htm">send-authentication-prompt-interactive-2.htm</a></td>
+        <td class="webkit notperformed">-</td>
+        <td class="blink pass">Pass</td>
+        <td class="gecko pass">Pass</td>
+        <td class="trident pass">Pass</td>
+        <td class="presto pass">Pass</td>
+        <td>-</td>
+      </tr>
+      <tr>
+        <td><a href="http://w3c-test.org/web-platform-tests/master/XMLHttpRequest/send-authentication-prompt-interactive.htm">send-authentication-prompt-interactive-2.htm</a></td>
+        <td class="webkit notperformed">-</td>
+        <td class="blink pass">Pass</td>
+        <td class="gecko fail"><a href="about:blank">Fail</a></td>
+        <td class="trident fail"><a href="about:blank">Fail</a></td>
+        <td class="presto pass">Pass</td>
+        <td>-</td>
+      </tr>
+      <tr>
+        <td><a href="http://w3c-test.org/web-platform-tests/master/XMLHttpRequest/send-conditional.htm">send-conditional.htm</a></td>
+        <td class="webkit notperformed">-</td>
+        <td class="blink fail"><a href="about:blank">Fail</a></td>
+        <td class="gecko fail"><a href="about:blank">Fail</a></td>
+        <td class="trident fail"><a href="about:blank">Fail</a></td>
+        <td class="presto fail"><a href="about:blank">Fail</a></td>
+        <td>-</td>
+      </tr>
+      <tr>
+        <td><a href="http://w3c-test.org/web-platform-tests/master/XMLHttpRequest/send-content-type-charset.htm">send-content-type-charset.htm</a></td>
+        <td class="webkit notperformed">-</td>
+        <td class="blink fail"><a href="about:blank">Fail(Partial)</a></td>
+        <td class="gecko fail"><a href="about:blank">Fail(Partial)</a></td>
+        <td class="trident fail"><a href="about:blank">Fail(Partial)</a></td>
+        <td class="presto pass">Pass</td>
+        <td>-</td>
+      </tr>
+      <tr>
+        <td><a href="http://w3c-test.org/web-platform-tests/master/XMLHttpRequest/send-content-type-string.htm">send-content-type-string.htm</a></td>
+        <td class="webkit notperformed">-</td>
+        <td class="blink fail"><a href="about:blank">Fail(Partial)</a></td>
+        <td class="gecko fail"><a href="about:blank">Fail</a></td>
+        <td class="trident pass">Pass</td>
+        <td class="presto fail"><a href="about:blank">Fail(Partial)</a></td>
+        <td>Blink: Harness encountered an error.</td>
+      </tr>
+      <tr>
+        <td><a href="http://w3c-test.org/web-platform-tests/master/XMLHttpRequest/send-data-arraybuffer.htm">send-data-arraybuffer.htm</a></td>
+        <td class="webkit notperformed">-</td>
+        <td class="blink pass">Pass</td>
+        <td class="gecko pass">Pass</td>
+        <td class="trident pass">Pass</td>
+        <td class="presto pass">Pass</td>
+        <td>-</td>
+      </tr>
+      <tr>
+        <td><a href="http://w3c-test.org/web-platform-tests/master/XMLHttpRequest/send-data-blob.htm">send-data-blob.htm</a></td>
+        <td class="webkit notperformed">-</td>
+        <td class="blink pass">Pass</td>
+        <td class="gecko pass">Pass</td>
+        <td class="trident pass">Pass</td>
+        <td class="presto pass">Pass</td>
+        <td>-</td>
+      </tr>
+      <tr>
+        <td><a href="http://w3c-test.org/web-platform-tests/master/XMLHttpRequest/send-data-formdata.htm">send-data-formdata.htm</a></td>
+        <td class="webkit notperformed">-</td>
+        <td class="blink pass">Pass</td>
+        <td class="gecko pass">Pass</td>
+        <td class="trident pass">Pass</td>
+        <td class="presto pass">Pass</td>
+        <td>-</td>
+      </tr>
+      <tr>
+        <td><a href="http://w3c-test.org/web-platform-tests/master/XMLHttpRequest/send-entity-body-basic.htm">send-entity-body-basic.htm</a></td>
+        <td class="webkit notperformed">-</td>
+        <td class="blink pass">Pass</td>
+        <td class="gecko fail"><a href="about:blank">Fail(Partial)</a></td>
+        <td class="trident pass">Pass</td>
+        <td class="presto pass">Pass</td>
+        <td>-</td>
+      </tr>
+      <tr>
+        <td><a href="http://w3c-test.org/web-platform-tests/master/XMLHttpRequest/send-entity-body-document-bogus.htm">send-entity-body-document-bogus.htm</a></td>
+        <td class="webkit notperformed">-</td>
+        <td class="blink fail"><a href="about:blank">Fail</a></td>
+        <td class="gecko fail"><a href="about:blank">Fail</a></td>
+        <td class="trident fail"><a href="about:blank">Fail</a></td>
+        <td class="presto fail"><a href="about:blank">Fail</a></td>
+        <td>-</td>
+      </tr>
+      <tr>
+        <td><a href="http://w3c-test.org/web-platform-tests/master/XMLHttpRequest/send-entity-body-document.htm">send-entity-body-document.htm</a></td>
+        <td class="webkit notperformed">-</td>
+        <td class="blink fail"><a href="about:blank">Fail</a></td>
+        <td class="gecko fail"><a href="about:blank">Fail(Partial)</a></td>
+        <td class="trident fail"><a href="about:blank">Fail</a></td>
+        <td class="presto fail"><a href="about:blank">Fail</a></td>
+        <td>Blink, Trident: Harness encountered an error.</td>
+      </tr>
+      <tr>
+        <td><a href="http://w3c-test.org/web-platform-tests/master/XMLHttpRequest/send-entity-body-empty.htm">send-entity-body-empty.htm</a></td>
+        <td class="webkit notperformed">-</td>
+        <td class="blink pass">Pass</td>
+        <td class="gecko pass">Pass</td>
+        <td class="trident pass">Pass</td>
+        <td class="presto pass">Pass</td>
+        <td>-</td>
+      </tr>
+      <tr>
+        <td><a href="http://w3c-test.org/web-platform-tests/master/XMLHttpRequest/send-entity-body-get-head-async.htm">send-entity-body-get-head-async.htm</a></td>
+        <td class="webkit notperformed">-</td>
+        <td class="blink fail"><a href="about:blank">Fail(Partial)</a></td>
+        <td class="gecko pass">Pass</td>
+        <td class="trident fail"><a href="about:blank">Fail(Partial)</a></td>
+        <td class="presto pass">Pass</td>
+        <td>-</td>
+      </tr>
+      <tr>
+        <td><a href="http://w3c-test.org/web-platform-tests/master/XMLHttpRequest/send-entity-body-get-head.htm">send-entity-body-get-head.htm</a></td>
+        <td class="webkit notperformed">-</td>
+        <td class="blink fail"><a href="about:blank">Fail(Partial)</a></td>
+        <td class="gecko pass">Pass</td>
+        <td class="trident fail"><a href="about:blank">Fail(Partial)</a></td>
+        <td class="presto pass">Pass</td>
+        <td>-</td>
+      </tr>
+      <tr>
+        <td><a href="http://w3c-test.org/web-platform-tests/master/XMLHttpRequest/send-entity-body-none.htm">send-entity-body-none.htm</a></td>
+        <td class="webkit notperformed">-</td>
+        <td class="blink pass">Pass</td>
+        <td class="gecko pass">Pass</td>
+        <td class="trident pass">Pass</td>
+        <td class="presto pass">Pass</td>
+        <td>-</td>
+      </tr>
+      <tr>
+        <td><a href="http://w3c-test.org/web-platform-tests/master/XMLHttpRequest/send-network-error-async-events.htm">send-network-error-async-events.htm</a></td>
+        <td class="webkit notperformed">-</td>
+        <td class="blink pass">Pass</td>
+        <td class="gecko fail"><a href="about:blank">Fail(Partial)</a></td>
+        <td class="trident pass">Pass</td>
+        <td class="presto fail"><a href="about:blank">Fail(Partial)</a></td>
+        <td>-</td>
+      </tr>
+      <tr>
+        <td><a href="http://w3c-test.org/web-platform-tests/master/XMLHttpRequest/send-network-error-sync-events.htm">send-network-error-sync-events.htm</a></td>
+        <td class="webkit notperformed">-</td>
+        <td class="blink pass">Pass</td>
+        <td class="gecko fail"><a href="about:blank">Fail</a></td>
+        <td class="trident pass">Pass</td>
+        <td class="presto pass">Pass</td>
+        <td>-</td>
+      </tr>
+      <tr>
+        <td><a href="http://w3c-test.org/web-platform-tests/master/XMLHttpRequest/send-no-response-event-loadend.htm">send-no-response-event-loadend.htm</a></td>
+        <td class="webkit notperformed">-</td>
+        <td class="blink pass">Pass</td>
+        <td class="gecko pass">Pass</td>
+        <td class="trident pass">Pass</td>
+        <td class="presto pass">Pass</td>
+        <td>-</td>
+      </tr>
+      <tr>
+        <td><a href="http://w3c-test.org/web-platform-tests/master/XMLHttpRequest/send-no-response-event-loadstart.htm">send-no-response-event-loadstart.htm</a></td>
+        <td class="webkit notperformed">-</td>
+        <td class="blink pass">Pass</td>
+        <td class="gecko pass">Pass</td>
+        <td class="trident pass">Pass</td>
+        <td class="presto pass">Pass</td>
+        <td>-</td>
+      </tr>
+      <tr>
+        <td><a href="http://w3c-test.org/web-platform-tests/master/XMLHttpRequest/send-no-response-event-order.htm">send-no-response-event-order.htm</a></td>
+        <td class="webkit notperformed">-</td>
+        <td class="blink pass">Pass</td>
+        <td class="gecko pass">Pass</td>
+        <td class="trident pass">Pass</td>
+        <td class="presto pass">Pass</td>
+        <td>-</td>
+      </tr>
+      <tr>
+        <td><a href="http://w3c-test.org/web-platform-tests/master/XMLHttpRequest/send-non-same-origin.htm">send-non-same-origin.htm</a></td>
+        <td class="webkit notperformed">-</td>
+        <td class="blink pass">Pass</td>
+        <td class="gecko fail"><a href="about:blank">Fail</a></td>
+        <td class="trident fail"><a href="about:blank">Fail(Partial)</a></td>
+        <td class="presto fail"><a href="about:blank">Fail(Partial)</a></td>
+        <td>-</td>
+      </tr>
+      <tr>
+        <td><a href="http://w3c-test.org/web-platform-tests/master/XMLHttpRequest/send-redirect-bogus-sync.htm">send-redirect-bogus-sync.htm</a></td>
+        <td class="webkit notperformed">-</td>
+        <td class="blink pass">Pass</td>
+        <td class="gecko fail"><a href="about:blank">Fail</a></td>
+        <td class="trident pass">Pass</td>
+        <td class="presto fail"><a href="about:blank">Fail(Partial)</a></td>
+        <td>-</td>
+      </tr>
+      <tr>
+        <td><a href="http://w3c-test.org/web-platform-tests/master/XMLHttpRequest/send-redirect-bogus.htm">send-redirect-bogus.htm</a></td>
+        <td class="webkit notperformed">-</td>
+        <td class="blink pass">Pass</td>
+        <td class="gecko fail"><a href="about:blank">Fail(Partial)</a></td>
+        <td class="trident pass">Pass</td>
+        <td class="presto fail"><a href="about:blank">Fail(Partial)</a></td>
+        <td>-</td>
+      </tr>
+      <tr>
+        <td><a href="http://w3c-test.org/web-platform-tests/master/XMLHttpRequest/send-redirect-infinite-sync.htm">send-redirect-infinite-sync.htm</a></td>
+        <td class="webkit notperformed">-</td>
+        <td class="blink pass">Pass</td>
+        <td class="gecko fail"><a href="about:blank">Fail</a></td>
+        <td class="trident pass">Pass</td>
+        <td class="presto notperformed">-</td>
+        <td>Presto: test does not end.</td>
+      </tr>
+      <tr>
+        <td><a href="http://w3c-test.org/web-platform-tests/master/XMLHttpRequest/send-redirect-infinite.htm">send-redirect-infinite.htm</a></td>
+        <td class="webkit notperformed">-</td>
+        <td class="blink notrun"><a href="about:blank">NotRun</a></td>
+        <td class="gecko notrun"><a href="about:blank">NotRun</a></td>
+        <td class="trident notrun"><a href="about:blank">NotRun</a></td>
+        <td class="presto notrun"><a href="about:blank">NotRun</a></td>
+        <td>-</td>
+      </tr>
+      <tr>
+        <td><a href="http://w3c-test.org/web-platform-tests/master/XMLHttpRequest/send-redirect-no-location.htm">send-redirect-no-location.htm</a></td>
+        <td class="webkit notperformed">-</td>
+        <td class="blink pass">Pass</td>
+        <td class="gecko pass">Pass</td>
+        <td class="trident fail"><a href="about:blank">Fail</a></td>
+        <td class="presto pass">Pass</td>
+        <td>-</td>
+      </tr>
+      <tr>
+        <td><a href="http://w3c-test.org/web-platform-tests/master/XMLHttpRequest/send-redirect-to-cors.htm">send-redirect-to-cors.htm</a></td>
+        <td class="webkit notperformed">-</td>
+        <td class="blink fail"><a href="about:blank">Fail</a></td>
+        <td class="gecko fail"><a href="about:blank">Fail</a></td>
+        <td class="trident fail"><a href="about:blank">Fail</a></td>
+        <td class="presto fail"><a href="about:blank">Fail</a></td>
+        <td>-</td>
+      </tr>
+      <tr>
+        <td><a href="http://w3c-test.org/web-platform-tests/master/XMLHttpRequest/send-redirect-to-non-cors.htm">send-redirect-to-non-cors.htm</a></td>
+        <td class="webkit notperformed">-</td>
+        <td class="blink pass">Pass</td>
+        <td class="gecko pass">Pass</td>
+        <td class="trident pass">Pass</td>
+        <td class="presto pass">Pass</td>
+        <td>-</td>
+      </tr>
+      <tr>
+        <td><a href="http://w3c-test.org/web-platform-tests/master/XMLHttpRequest/send-redirect.htm">send-redirect.htm</a></td>
+        <td class="webkit notperformed">-</td>
+        <td class="blink fail"><a href="about:blank">Fail(Partial)</a></td>
+        <td class="gecko pass">Pass</td>
+        <td class="trident fail"><a href="about:blank">Fail</a></td>
+        <td class="presto pass">Pass</td>
+        <td>-</td>
+      </tr>
+      <tr>
+        <td><a href="http://w3c-test.org/web-platform-tests/master/XMLHttpRequest/send-response-event-order.htm">send-response-event-order.htm</a></td>
+        <td class="webkit notperformed">-</td>
+        <td class="blink pass">Pass</td>
+        <td class="gecko fail"><a href="about:blank">Fail</a></td>
+        <td class="trident pass">Pass</td>
+        <td class="presto pass">Pass</td>
+        <td>-</td>
+      </tr>
+      <tr>
+        <td><a href="http://w3c-test.org/web-platform-tests/master/XMLHttpRequest/send-response-upload-event-loadend.htm">send-response-upload-event-loadend.htm</a></td>
+        <td class="webkit notperformed">-</td>
+        <td class="blink pass">Pass</td>
+        <td class="gecko pass">Pass</td>
+        <td class="trident pass">Pass</td>
+        <td class="presto pass">Pass</td>
+        <td>-</td>
+      </tr>
+      <tr>
+        <td><a href="http://w3c-test.org/web-platform-tests/master/XMLHttpRequest/send-response-upload-event-loadstart.htm">send-response-upload-event-loadstart.htm</a></td>
+        <td class="webkit notperformed">-</td>
+        <td class="blink pass">Pass</td>
+        <td class="gecko pass">Pass</td>
+        <td class="trident pass">Pass</td>
+        <td class="presto pass">Pass</td>
+        <td>-</td>
+      </tr>
+      <tr>
+        <td><a href="http://w3c-test.org/web-platform-tests/master/XMLHttpRequest/send-response-upload-event-progress.htm">send-response-upload-event-progress.htm</a></td>
+        <td class="webkit notperformed">-</td>
+        <td class="blink pass">Pass</td>
+        <td class="gecko timeout"><a href="about:blank">Timeout</a></td>
+        <td class="trident pass">Pass</td>
+        <td class="presto pass">Pass</td>
+        <td>-</td>
+      </tr>
+      <tr>
+        <td><a href="http://w3c-test.org/web-platform-tests/master/XMLHttpRequest/send-send.htm">send-send.htm</a></td>
+        <td class="webkit notperformed">-</td>
+        <td class="blink pass">Pass</td>
+        <td class="gecko fail"><a href="about:blank">Fail</a></td>
+        <td class="trident pass">Pass</td>
+        <td class="presto pass">Pass</td>
+        <td>-</td>
+      </tr>
+      <tr>
+        <td><a href="http://w3c-test.org/web-platform-tests/master/XMLHttpRequest/send-sync-no-response-event-load.htm">send-sync-no-response-event-load.htm</a></td>
+        <td class="webkit notperformed">-</td>
+        <td class="blink pass">Pass</td>
+        <td class="gecko pass">Pass</td>
+        <td class="trident pass">Pass</td>
+        <td class="presto pass">Pass</td>
+        <td>-</td>
+      </tr>
+      <tr>
+        <td><a href="http://w3c-test.org/web-platform-tests/master/XMLHttpRequest/send-sync-no-response-event-loadend.htm">send-sync-no-response-event-loadend.htm</a></td>
+        <td class="webkit notperformed">-</td>
+        <td class="blink pass">Pass</td>
+        <td class="gecko pass">Pass</td>
+        <td class="trident pass">Pass</td>
+        <td class="presto pass">Pass</td>
+        <td>-</td>
+      </tr>
+      <tr>
+        <td><a href="http://w3c-test.org/web-platform-tests/master/XMLHttpRequest/send-sync-no-response-event-order.htm">send-sync-no-response-event-order.htm</a></td>
+        <td class="webkit notperformed">-</td>
+        <td class="blink pass">Pass</td>
+        <td class="gecko pass">Pass</td>
+        <td class="trident pass">Pass</td>
+        <td class="presto pass">Pass</td>
+        <td>-</td>
+      </tr>
+      <tr>
+        <td><a href="http://w3c-test.org/web-platform-tests/master/XMLHttpRequest/send-sync-response-event-order.htm">send-sync-response-event-order.htm</a></td>
+        <td class="webkit notperformed">-</td>
+        <td class="blink pass">Pass</td>
+        <td class="gecko pass">Pass</td>
+        <td class="trident pass">Pass</td>
+        <td class="presto pass">Pass</td>
+        <td>-</td>
+      </tr>
+      <tr>
+        <td><a href="http://w3c-test.org/web-platform-tests/master/XMLHttpRequest/send-sync-timeout.htm">send-sync-timeout.htm</a></td>
+        <td class="webkit notperformed">-</td>
+        <td class="blink pass">Pass</td>
+        <td class="gecko pass">Pass</td>
+        <td class="trident pass">Pass</td>
+        <td class="presto fail"><a href="about:blank">Fail</a></td>
+        <td>-</td>
+      </tr>
+      <tr>
+        <td><a href="http://w3c-test.org/web-platform-tests/master/XMLHttpRequest/send-timeout-events.htm">send-timeout-events.htm</a></td>
+        <td class="webkit notperformed">-</td>
+        <td class="blink pass">Pass</td>
+        <td class="gecko fail"><a href="about:blank">Fail</a></td>
+        <td class="trident pass">Pass</td>
+        <td class="presto fail"><a href="about:blank">Fail</a></td>
+        <td>-</td>
+      </tr>
+      <tr>
+        <td><a href="http://w3c-test.org/web-platform-tests/master/XMLHttpRequest/setrequestheader-after-send.htm">setrequestheader-after-send.htm</a></td>
+        <td class="webkit notperformed">-</td>
+        <td class="blink pass">Pass</td>
+        <td class="gecko pass">Pass</td>
+        <td class="trident pass">Pass</td>
+        <td class="presto pass">Pass</td>
+        <td>-</td>
+      </tr>
+      <tr>
+        <td><a href="http://w3c-test.org/web-platform-tests/master/XMLHttpRequest/setrequestheader-before-open.htm">setrequestheader-before-open.htm</a></td>
+        <td class="webkit notperformed">-</td>
+        <td class="blink pass">Pass</td>
+        <td class="gecko pass">Pass</td>
+        <td class="trident pass">Pass</td>
+        <td class="presto pass">Pass</td>
+        <td>-</td>
+      </tr>
+      <tr>
+        <td><a href="http://w3c-test.org/web-platform-tests/master/XMLHttpRequest/setrequestheader-bogus-name.htm">setrequestheader-bogus-name.htm</a></td>
+        <td class="webkit notperformed">-</td>
+        <td class="blink pass">Pass</td>
+        <td class="gecko fail"><a href="about:blank">Fail(Partial)</a></td>
+        <td class="trident fail"><a href="about:blank">Fail(Partial)</a></td>
+        <td class="presto pass">Pass</td>
+        <td>-</td>
+      </tr>
+      <tr>
+        <td><a href="http://w3c-test.org/web-platform-tests/master/XMLHttpRequest/setrequestheader-bogus-value.htm">setrequestheader-bogus-value.htm</a></td>
+        <td class="webkit notperformed">-</td>
+        <td class="blink pass">Pass</td>
+        <td class="gecko fail"><a href="about:blank">Fail(Partial)</a></td>
+        <td class="trident fail"><a href="about:blank">Fail(Partial)</a></td>
+        <td class="presto fail"><a href="about:blank">Fail(Partial)</a></td>
+        <td>-</td>
+      </tr>
+      <tr>
+        <td><a href="http://w3c-test.org/web-platform-tests/master/XMLHttpRequest/setrequestheader-case-insensitive.htm">setrequestheader-case-insensitive.htm</a></td>
+        <td class="webkit notperformed">-</td>
+        <td class="blink pass">Pass</td>
+        <td class="gecko fail"><a href="about:blank">Fail</a></td>
+        <td class="trident pass">Pass</td>
+        <td class="presto pass">Pass</td>
+        <td>-</td>
+      </tr>
+      <tr>
+        <td><a href="http://w3c-test.org/web-platform-tests/master/XMLHttpRequest/setrequestheader-header-allowed.htm">setrequestheader-header-allowed.htm</a></td>
+        <td class="webkit notperformed">-</td>
+        <td class="blink fail"><a href="about:blank">Fail(Partial)</a></td>
+        <td class="gecko fail"><a href="about:blank">Fail(Partial)</a></td>
+        <td class="trident fail"><a href="about:blank">Fail(Partial)</a></td>
+        <td class="presto fail"><a href="about:blank">Fail(Partial)</a></td>
+        <td>-</td>
+      </tr>
+      <tr>
+        <td><a href="http://w3c-test.org/web-platform-tests/master/XMLHttpRequest/setrequestheader-header-forbidden.htm">setrequestheader-header-forbidden.htm</a></td>
+        <td class="webkit notperformed">-</td>
+        <td class="blink fail"><a href="about:blank">Fail</a></td>
+        <td class="gecko pass">Pass</td>
+        <td class="trident pass">Pass</td>
+        <td class="presto pass">Pass</td>
+        <td>-</td>
+      </tr>
+      <tr>
+        <td><a href="http://w3c-test.org/web-platform-tests/master/XMLHttpRequest/status-async.htm">status-async.htm</a></td>
+        <td class="webkit notperformed">-</td>
+        <td class="blink fail"><a href="about:blank">Fail(Partial)</a></td>
+        <td class="gecko pass">Pass</td>
+        <td class="trident pass">Pass</td>
+        <td class="presto pass">Pass</td>
+        <td>-</td>
+      </tr>
+      <tr>
+        <td><a href="http://w3c-test.org/web-platform-tests/master/XMLHttpRequest/status-basic.htm">status-basic.htm</a></td>
+        <td class="webkit notperformed">-</td>
+        <td class="blink pass">Pass</td>
+        <td class="gecko pass">Pass</td>
+        <td class="trident pass">Pass</td>
+        <td class="presto pass">Pass</td>
+        <td>-</td>
+      </tr>
+      <tr>
+        <td><a href="http://w3c-test.org/web-platform-tests/master/XMLHttpRequest/status-error.htm">status-error.htm</a></td>
+        <td class="webkit notperformed">-</td>
+        <td class="blink pass">Pass</td>
+        <td class="gecko pass">Pass</td>
+        <td class="trident fail"><a href="about:blank">Fail</a></td>
+        <td class="presto pass">Pass</td>
+        <td>-</td>
+      </tr>
+      <tr>
+        <td><a href="http://w3c-test.org/web-platform-tests/master/XMLHttpRequest/timeout-cors-async.htm">timeout-cors-async.htm</a></td>
+        <td class="webkit notperformed">-</td>
+        <td class="blink fail"><a href="about:blank">Fail</a></td>
+        <td class="gecko fail"><a href="about:blank">Fail</a></td>
+        <td class="trident fail"><a href="about:blank">Fail</a></td>
+        <td class="presto fail"><a href="about:blank">Fail</a></td>
+        <td>-</td>
+      </tr>
+      <tr>
+        <td><a href="http://w3c-test.org/web-platform-tests/master/XMLHttpRequest/timeout-sync.htm">timeout-sync.htm</a></td>
+        <td class="webkit notperformed">-</td>
+        <td class="blink pass">Pass</td>
+        <td class="gecko pass">Pass</td>
+        <td class="trident fail"><a href="about:blank">Fail</a></td>
+        <td class="presto fail"><a href="about:blank">Fail</a></td>
+        <td>-</td>
+      </tr>
+      <tr>
+        <td><a href="http://w3c-test.org/web-platform-tests/master/XMLHttpRequest/withcredentials-anonymous.htm">withcredentials-anonymous.htm</a></td>
+        <td class="webkit notperformed">-</td>
+        <td class="blink fail"><a href="about:blank">Fail</a></td>
+        <td class="gecko fail"><a href="about:blank">Fail</a></td>
+        <td class="trident fail"><a href="about:blank">Fail</a></td>
+        <td class="presto fail"><a href="about:blank">Fail</a></td>
+        <td>-</td>
+      </tr>
+      <tr>
+        <td><a href="http://w3c-test.org/web-platform-tests/master/XMLHttpRequest/withcredentials-set.htm">withcredentials-set.htm</a></td>
+        <td class="webkit notperformed">-</td>
+        <td class="blink pass">Pass</td>
+        <td class="gecko fail"><a href="about:blank">Fail(Partial)</a></td>
+        <td class="trident fail"><a href="about:blank">Fail(Partial)</a></td>
+        <td class="presto pass">Pass</td>
+        <td>-</td>
+      </tr>
+      <tr>
+        <td><a href="http://w3c-test.org/web-platform-tests/master/XMLHttpRequest/withcredentials-wrong-state.htm">withcredentials-wrong-state.htm</a></td>
+        <td class="webkit notperformed">-</td>
+        <td class="blink pass">Pass</td>
+        <td class="gecko fail"><a href="about:blank">Fail</a></td>
+        <td class="trident pass">Pass</td>
+        <td class="presto pass">Pass</td>
+        <td>-</td>
+      </tr>
+      <tr>
+        <td><a href="http://w3c-test.org/web-platform-tests/master/XMLHttpRequest/xmlhttprequest-basic.htm">xmlhttprequest-basic.htm</a></td>
+        <td class="webkit notperformed">-</td>
+        <td class="blink pass">Pass</td>
+        <td class="gecko pass">Pass</td>
+        <td class="trident pass">Pass</td>
+        <td class="presto pass">Pass</td>
+        <td>-</td>
+      </tr>
+      <tr>
+        <td><a href="http://w3c-test.org/web-platform-tests/master/XMLHttpRequest/xmlhttprequest-eventtarget.htm">xmlhttprequest-eventtarget.htm</a></td>
+        <td class="webkit notperformed">-</td>
+        <td class="blink pass">Pass</td>
+        <td class="gecko pass">Pass</td>
+        <td class="trident fail"><a href="about:blank">Fail</a></td>
+        <td class="presto pass">Pass</td>
+        <td>-</td>
+      </tr>
+      <tr>
+        <td><a href="http://w3c-test.org/web-platform-tests/master/XMLHttpRequest/xmlhttprequest-network-error-sync.htm">xmlhttprequest-network-error-sync.htm</a></td>
+        <td class="webkit notperformed">-</td>
+        <td class="blink pass">Pass</td>
+        <td class="gecko fail"><a href="about:blank">Fail</a></td>
+        <td class="trident pass">Pass</td>
+        <td class="presto notperformed">-</td>
+        <td>Presto: test does not end.</td>
+      </tr>
+      <tr>
+        <td><a href="http://w3c-test.org/web-platform-tests/master/XMLHttpRequest/xmlhttprequest-network-error.htm">xmlhttprequest-network-error.htm</a></td>
+        <td class="webkit notperformed">-</td>
+        <td class="blink fail"><a href="about:blank">Fail</a></td>
+        <td class="gecko timeout"><a href="about:blank">Timeout</a></td>
+        <td class="trident timeout"><a href="about:blank">Timeout</a></td>
+        <td class="presto timeout"><a href="about:blank">Timeout</a></td>
+        <td>-</td>
+      </tr>
+      <tr>
+        <td><a href="http://w3c-test.org/web-platform-tests/master/XMLHttpRequest/xmlhttprequest-timeout-aborted.html">xmlhttprequest-timeout-aborted.html*</a></td>
+        <td class="webkit notperformed">-</td>
+        <td class="blink notperformed">-</td>
+        <td class="gecko notperformed">-</td>
+        <td class="trident notperformed">-</td>
+        <td class="presto notperformed">-</td>
+        <td>All: TC error? Need to check.</td>
+      </tr>
+      <tr>
+        <td><a href="http://w3c-test.org/web-platform-tests/master/XMLHttpRequest/xmlhttprequest-timeout-abortedonmain.html">xmlhttprequest-timeout-abortedonmain.html</a></td>
+        <td class="webkit notperformed">-</td>
+        <td class="blink pass">Pass</td>
+        <td class="gecko pass">Pass</td>
+        <td class="trident pass">Pass</td>
+        <td class="presto pass">Pass</td>
+        <td>-</td>
+      </tr>
+      <tr>
+        <td><a href="http://w3c-test.org/web-platform-tests/master/XMLHttpRequest/xmlhttprequest-timeout-overrides.html">xmlhttprequest-timeout-overrides.html</a></td>
+        <td class="webkit notperformed">-</td>
+        <td class="blink fail"><a href="about:blank">Fail(Partial)</a></td>
+        <td class="gecko fail"><a href="about:blank">Fail(Partial)</a></td>
+        <td class="trident fail"><a href="about:blank">Fail</a></td>
+        <td class="presto fail"><a href="about:blank">Fail(Partial)</a></td>
+        <td>Trident: Harness encountered an error.</td>
+      </tr>
+      <tr>
+        <td><a href="http://w3c-test.org/web-platform-tests/master/XMLHttpRequest/xmlhttprequest-timeout-overridesexpires.html">xmlhttprequest-timeout-overridesexpires.html</a></td>
+        <td class="webkit notperformed">-</td>
+        <td class="blink fail"><a href="about:blank">Fail(Partial)</a></td>
+        <td class="gecko fail"><a href="about:blank">Fail(Partial)</a></td>
+        <td class="trident fail"><a href="about:blank">Fail(Partial)</a></td>
+        <td class="presto fail"><a href="about:blank">Fail(Partial)</a></td>
+        <td>Trident: Harness encountered an error.</td>
+      </tr>
+      <tr>
+        <td><a href="http://w3c-test.org/web-platform-tests/master/XMLHttpRequest/xmlhttprequest-timeout-simple.html">xmlhttprequest-timeout-simple.html</a></td>
+        <td class="webkit notperformed">-</td>
+        <td class="blink fail"><a href="about:blank">Fail(Partial)</a></td>
+        <td class="gecko fail"><a href="about:blank">Fail(Partial)</a></td>
+        <td class="trident fail"><a href="about:blank">Fail(Partial)</a></td>
+        <td class="presto fail"><a href="about:blank">Fail(Partial)</a></td>
+        <td>-</td>
+      </tr>
+      <tr>
+        <td><a href="http://w3c-test.org/web-platform-tests/master/XMLHttpRequest/xmlhttprequest-timeout-synconmain.html">xmlhttprequest-timeout-synconmain.html</a></td>
+        <td class="webkit notperformed">-</td>
+        <td class="blink pass">Pass</td>
+        <td class="gecko pass">Pass</td>
+        <td class="trident fail"><a href="about:blank">Fail</a></td>
+        <td class="presto fail"><a href="about:blank">Fail(Partial)</a></td>
+        <td>Trident: Harness encountered an error.</td>
+      </tr>
+      <tr>
+        <td><a href="http://w3c-test.org/web-platform-tests/master/XMLHttpRequest/xmlhttprequest-timeout-twice.html">xmlhttprequest-timeout-twice.html</a></td>
+        <td class="webkit notperformed">-</td>
+        <td class="blink fail"><a href="about:blank">Fail(Partial)</a></td>
+        <td class="gecko fail"><a href="about:blank">Fail(Partial)</a></td>
+        <td class="trident fail"><a href="about:blank">Fail(Partial)</a></td>
+        <td class="presto fail"><a href="about:blank">Fail(Partial)</a></td>
+        <td>Trident: Harness encountered an error.</td>
+      </tr>
+      <tr>
+        <td><a href="http://w3c-test.org/web-platform-tests/master/XMLHttpRequest/xmlhttprequest-timeout-worker-aborted.html">xmlhttprequest-timeout-worker-aborted.html</a></td>
+        <td class="webkit notperformed">-</td>
+        <td class="blink pass">Pass</td>
+        <td class="gecko pass">Pass</td>
+        <td class="trident pass">Pass</td>
+        <td class="presto pass">Pass</td>
+        <td>Blink: All test assertions are passed but Harness encountered an error: duplicate test name.</td>
+      </tr>
+      <tr>
+        <td><a href="http://w3c-test.org/web-platform-tests/master/XMLHttpRequest/xmlhttprequest-timeout-worker-overrides.html">xmlhttprequest-timeout-worker-overrides.html</a></td>
+        <td class="webkit notperformed">-</td>
+        <td class="blink fail"><a href="about:blank">Fail(Partial)</a></td>
+        <td class="gecko pass">Pass</td>
+        <td class="trident fail"><a href="about:blank">Fail</a></td>
+        <td class="presto fail"><a href="about:blank">Fail(Partial)</a></td>
+        <td>Trident: Harness encountered an error.</td>
+      </tr>
+      <tr>
+        <td><a href="http://w3c-test.org/web-platform-tests/master/XMLHttpRequest/xmlhttprequest-timeout-worker-overridesexpires.html">xmlhttprequest-timeout-worker-overridesexpires.html</a></td>
+        <td class="webkit notperformed">-</td>
+        <td class="blink fail"><a href="about:blank">Fail(Partial)</a></td>
+        <td class="gecko pass">Pass</td>
+        <td class="trident fail"><a href="about:blank">Fail(Partial)</a></td>
+        <td class="presto fail"><a href="about:blank">Fail(Partial)</a></td>
+        <td>Trident: Harness encountered an error.</td>
+      </tr>
+      <tr>
+        <td><a href="http://w3c-test.org/web-platform-tests/master/XMLHttpRequest/xmlhttprequest-timeout-worker-simple.html">xmlhttprequest-timeout-worker-simple.html</a></td>
+        <td class="webkit notperformed">-</td>
+        <td class="blink pass">Pass</td>
+        <td class="gecko pass">Pass</td>
+        <td class="trident pass">Pass</td>
+        <td class="presto pass">Pass</td>
+        <td>-</td>
+      </tr>
+      <tr>
+        <td><a href="http://w3c-test.org/web-platform-tests/master/XMLHttpRequest/xmlhttprequest-timeout-worker-synconworker.html">xmlhttprequest-timeout-worker-synconworker.html*</a></td>
+        <td class="webkit notperformed">-</td>
+        <td class="blink pass">Pass</td>
+        <td class="gecko pass">Pass</td>
+        <td class="trident pass">Pass</td>
+        <td class="presto fail"><a href="about:blank">Fail(Partial)</a></td>
+        <td>TC error? Not consistent to test clients.</td>
+      </tr>
+      <tr>
+        <td><a href="http://w3c-test.org/web-platform-tests/master/XMLHttpRequest/xmlhttprequest-timeout-worker-twice.html">xmlhttprequest-timeout-worker-twice.html</a></td>
+        <td class="webkit notperformed">-</td>
+        <td class="blink pass">Pass</td>
+        <td class="gecko pass">Pass</td>
+        <td class="trident fail"><a href="about:blank">Fail</a></td>
+        <td class="presto pass">Pass</td>
+        <td>Trident: Harness encountered an error.</td>
+      </tr>
+      <tr>
+        <td><a href="http://w3c-test.org/web-platform-tests/master/XMLHttpRequest/xmlhttprequest-unsent.htm">xmlhttprequest-unsent.htm</a></td>
+        <td class="webkit notperformed">-</td>
+        <td class="blink fail"><a href="about:blank">Fail</a></td>
+        <td class="gecko fail"><a href="about:blank">Fail</a></td>
+        <td class="trident pass">Pass</td>
+        <td class="presto pass">Pass</td>
+        <td>-</td>
+      </tr>
+    </tbody>
+    <tfoot>
+    </tfoot>
+  </table>
+  <p class="notice">* Last update: 21st of Oct, 2013</p>
+  <script src="scripts/main.js"></script>
+</body>
+</html>

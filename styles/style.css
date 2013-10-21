@@ -1,0 +1,102 @@
+/* Part of the style sheet referenced
+   http://coding.smashingmagazine.com/2008/08/13/top-10-css-table-designs */
+
+body
+{
+	line-height: 1.6em;
+}
+table
+{
+	font-family: "Lucida Sans Unicode", "Lucida Grande", Sans-Serif;
+	font-size: 12px;
+	margin: 12px;
+	width: 1024px;
+	text-align: left;
+	border-collapse: collapse;
+}
+a
+{
+	text-decoration:none;
+}
+table th
+{
+	padding: 8px;
+	font-weight: bold;
+	font-size: 14px;
+	color: black;
+	background: #b9c9fe;
+	text-align: center;
+}
+table tr
+{
+	line-height: 12px;
+}
+table td
+{
+	padding: 8px;
+	background: #e8edff;
+	border-top: 1px solid #fff;
+	color: #669;
+}
+table td.notperformed
+{
+	text-align: center;
+}
+table td.pass
+{
+	color: green;
+	text-align: center;
+}
+table td.fail
+{
+	color: red;
+	text-align: center;
+}
+table td.fail a:link
+{
+	color: red;
+}
+table td.timeout
+{
+	color: red;
+	text-align: center;
+}
+table td.timeout a:link
+{
+	color: red;
+}
+table td.notrun
+{
+	color: blue;
+	text-align: center;
+}
+table td.notrun a:link
+{
+	color: blue;
+}
+table td.stats
+{
+	font-weight: bold;
+	color: black;
+	text-align: center;
+}
+table tbody tr:hover td
+{
+	background: #d0dafd;
+}
+.title
+{
+	margin: 12px;
+	font-family: "Times New Roman", "Lucida Grande", Sans-Serif;
+	font-weight: bold;
+	font-size: 18px;
+}
+.title > a
+{
+	color: black;
+}
+.notice
+{
+	margin: 12px;
+	font-size: 12px;
+}
