@@ -8,7 +8,8 @@
 <body>
   <p class="title"><a href="https://dvcs.w3.org/hg/xhr/raw-file/tip/Overview.html" target="_blank">W3C <em>XMLHttpRequest</em></a> <a href="http://w3c-test.org/web-platform-tests/master/XMLHttpRequest/" target="_blank"><em>Test</em></a> Result</p>
   <p class="notice">* To contributors: please make a PR on any invalid test results. Updating with the links to filed bugs are very welcome!</p>
-  <table summary="2007 Major IT Companies' Profit">
+  <table summary="XMLHttpRequest test results for major web browser engines">
+
     <thead>
       <tr>
         <th scope="col">Test</th>
@@ -34,7 +35,7 @@
         <td><a href="http://w3c-test.org/web-platform-tests/master/XMLHttpRequest/abort-after-send.htm">abort-after-send.htm</a></td>
         <td class="webkit notperformed">-</td>
         <td class="blink fail"><a href="about:blank">Fail</a></td>
-        <td class="gecko fail"><a href="about:blank">Fail</a></td>
+        <td class="gecko fail"><a title="[XHR2] Too few progress events being fired" href="https://bugzilla.mozilla.org/show_bug.cgi?id=918703">918703</a></td>
         <td class="trident fail"><a href="about:blank">Fail</a></td>
         <td class="presto fail"><a href="about:blank">Fail</a></td>
         <td>-</td>
@@ -61,7 +62,7 @@
         <td><a href="http://w3c-test.org/web-platform-tests/master/XMLHttpRequest/abort-during-open.htm">abort-during-open.htm</a></td>
         <td class="webkit notperformed">-</td>
         <td class="blink pass">Pass</td>
-        <td class="gecko fail"><a href="about:blank">Fail</a></td>
+        <td class="gecko fail"><a title="[XHR2] Wrong exception: &quot;Component not initialized&quot;/&quot;failure&quot; instead of &quot;DOMException InvalidStateError&quot;" href="https://bugzilla.mozilla.org/show_bug.cgi?id=918705">918705</a></td>
         <td class="trident pass">Pass</td>
         <td class="presto pass">Pass</td>
         <td>Gecko: exception should be checked.</td>
@@ -79,7 +80,7 @@
         <td><a href="http://w3c-test.org/web-platform-tests/master/XMLHttpRequest/abort-during-upload.htm">abort-during-upload.htm</a></td>
         <td class="webkit notperformed">-</td>
         <td class="blink fail"><a href="about:blank">Fail</a></td>
-        <td class="gecko fail"><a href="about:blank">Fail</a></td>
+        <td class="gecko fail"><a title="[XHR2] Too few progress events being fired" href="https://bugzilla.mozilla.org/show_bug.cgi?id=918703">918703</a></td>
         <td class="trident fail"><a href="about:blank">Fail</a></td>
         <td class="presto fail"><a href="about:blank">Fail</a></td>
         <td>-</td>
@@ -88,7 +89,7 @@
         <td><a href="http://w3c-test.org/web-platform-tests/master/XMLHttpRequest/abort-event-abort.htm">abort-event-abort.htm</a></td>
         <td class="webkit notperformed">-</td>
         <td class="blink fail"><a href="about:blank">Fail</a></td>
-        <td class="gecko fail"><a href="about:blank">Fail</a></td>
+        <td class="gecko fail"><a title="[XHR2] Wrong exception: &quot;Component not initialized&quot;/&quot;failure&quot; instead of &quot;DOMException InvalidStateError&quot;" href="https://bugzilla.mozilla.org/show_bug.cgi?id=918705">918705</a></td>
         <td class="trident pass">Pass</td>
         <td class="presto pass">Pass</td>
         <td>Blink: abort() should not be called in this case<br> Gecko: exception should be checked.</td>
@@ -142,7 +143,7 @@
         <td><a href="http://w3c-test.org/web-platform-tests/master/XMLHttpRequest/data-uri-basic.htm">data-uri-basic.htm</a></td>
         <td class="webkit notperformed">-</td>
         <td class="blink fail"><a href="about:blank">Fail</a></td>
-        <td class="gecko fail"><a href="about:blank">Fail(Partial)</a></td>
+        <td class="gecko fail"><a title="[XHR2] Do not fake content-length header for data: URLs" href="https://bugzilla.mozilla.org/show_bug.cgi?id=924319">924319</a></td>
         <td class="trident fail"><a href="about:blank">Fail</a></td>
         <td class="presto fail"><a href="about:blank">Fail(Partial)</a></td>
         <td>Not supported in Level 1.</td>
@@ -151,7 +152,7 @@
         <td><a href="http://w3c-test.org/web-platform-tests/master/XMLHttpRequest/data-uri.htm">data-uri.htm</a></td>
         <td class="webkit notperformed">-</td>
         <td class="blink fail"><a href="about:blank">Fail</a></td>
-        <td class="gecko fail"><a href="about:blank">Fail</a></td>
+        <td class="gecko fail"><a title="[XHR2] Handle non-GET data: URL loading as network" href="https://bugzilla.mozilla.org/show_bug.cgi?id=918714">918714</a></td>
         <td class="trident fail"><a href="about:blank">Fail</a></td>
         <td class="presto fail"><a href="about:blank">Fail</a></td>
         <td>Not supported in Level 1.</td>
@@ -205,7 +206,7 @@
         <td><a href="http://w3c-test.org/web-platform-tests/master/XMLHttpRequest/event-readystatechange-loaded.htm">event-readystatechange-loaded.htm</a></td>
         <td class="webkit notperformed">-</td>
         <td class="blink fail"><a href="about:blank">Fail</a></td>
-        <td class="gecko fail"><a href="about:blank">Fail</a></td>
+        <td class="gecko fail"><a title="[XHR2] Too many readystatechange events in LOADING state (readyState 3)" href="https://bugzilla.mozilla.org/show_bug.cgi?id=918719">918719</a></td>
         <td class="trident fail"><a href="about:blank">Fail</a></td>
         <td class="presto pass">Pass</td>
         <td>All except Presto: fire multiple "LOADING"</td>
@@ -223,7 +224,7 @@
         <td><a href="http://w3c-test.org/web-platform-tests/master/XMLHttpRequest/event-upload-progress.htm">event-upload-progress.htm</a></td>
         <td class="webkit notperformed">-</td>
         <td class="blink pass">Pass</td>
-        <td class="gecko fail"><a href="about:blank">Fail</a></td>
+        <td class="gecko fail"><a title="[XHR2] Does not fire all expected events for XHR upload (progress, timeout, abort)" href="https://bugzilla.mozilla.org/show_bug.cgi?id=908375">908375</a></td>
         <td class="trident pass">Pass</td>
         <td class="presto pass">Pass</td>
         <td>Gecko: does not fire progress event during upload</td>
@@ -286,7 +287,7 @@
         <td><a href="http://w3c-test.org/web-platform-tests/master/XMLHttpRequest/getresponseheader-cookies-and-more.htm">getresponseheader-cookies-and-more.htm</a></td>
         <td class="webkit notperformed">-</td>
         <td class="blink fail"><a href="about:blank">Fail</a></td>
-        <td class="gecko fail"><a href="about:blank">Fail</a></td>
+        <td class="gecko fail"><a title="[XHR2] getResponseHeader() returns null instead of empty string for header without value (X-Custom-Header-Empty: )" href="https://bugzilla.mozilla.org/show_bug.cgi?id=918721">918721</a></td>
         <td class="trident pass">Pass</td>
         <td class="presto pass">Pass</td>
         <td>Blink: need to address to not throw but return null<br> Gecko: existing header with empty value?</td>
@@ -367,7 +368,7 @@
         <td><a href="http://w3c-test.org/web-platform-tests/master/XMLHttpRequest/open-method-case-sensitive.htm">open-method-case-sensitive.htm</a></td>
         <td class="webkit notperformed">-</td>
         <td class="blink fail"><a href="about:blank">Fail(Partial)</a></td>
-        <td class="gecko fail"><a href="about:blank">Fail(Partial)</a></td>
+        <td class="gecko fail"><a title="[XHR2] XHR implementation upper-cases too many (i.e. all) HTTP verbs" href="https://bugzilla.mozilla.org/show_bug.cgi?id=918722">918722</a></td>
         <td class="trident pass">Pass</td>
         <td class="presto pass">Pass</td>
         <td>Blink, Gecko: return modified values.</td>
@@ -376,7 +377,7 @@
         <td><a href="http://w3c-test.org/web-platform-tests/master/XMLHttpRequest/open-method-insecure.htm">open-method-insecure.htm</a></td>
         <td class="webkit notperformed">-</td>
         <td class="blink pass">Pass</td>
-        <td class="gecko fail"><a href="about:blank">Fail</a></td>
+        <td class="gecko fail"><a title="[XHR2] open() with disallowed method (HTTP verb) CONNECT doesn't throw" href="https://bugzilla.mozilla.org/show_bug.cgi?id=918709">918709</a></td>
         <td class="trident pass">Pass</td>
         <td class="presto pass">Pass</td>
         <td>Gecko: exception should be checked; does not throw for CONNECT.</td>
@@ -394,7 +395,7 @@
         <td><a href="http://w3c-test.org/web-platform-tests/master/XMLHttpRequest/open-open-send.htm">open-open-send.htm</a></td>
         <td class="webkit notperformed">-</td>
         <td class="blink pass">Pass</td>
-        <td class="gecko fail"><a href="about:blank">Fail</a></td>
+        <td class="gecko fail"><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=447689">447689</a></td>
         <td class="trident fail"><a href="about:blank">Fail</a></td>
         <td class="presto pass">Pass</td>
         <td>Gecko, Trident: need to address; readystatechange fires for open-open.</td>
@@ -403,7 +404,7 @@
         <td><a href="http://w3c-test.org/web-platform-tests/master/XMLHttpRequest/open-open-sync-send.htm">open-open-sync-send.htm</a></td>
         <td class="webkit notperformed">-</td>
         <td class="blink pass">Pass</td>
-        <td class="gecko fail"><a href="about:blank">Fail</a></td>
+        <td class="gecko fail"><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=447689">447689</a></td>
         <td class="trident fail"><a href="about:blank">Fail</a></td>
         <td class="presto fail"><a href="about:blank">Fail</a></td>
         <td>Gecko, Trident: need to address; readystatechange fires for open-open.<br> Presto: need to address.</td>
@@ -421,7 +422,7 @@
         <td><a href="http://w3c-test.org/web-platform-tests/master/XMLHttpRequest/open-send-open.htm">open-send-open.htm</a></td>
         <td class="webkit notperformed">-</td>
         <td class="blink pass">Pass</td>
-        <td class="gecko fail"><a href="about:blank">Fail</a></td>
+        <td class="gecko fail"><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=447689">447689</a></td>
         <td class="trident fail"><a href="about:blank">Fail</a></td>
         <td class="presto fail"><a href="about:blank">Fail</a></td>
         <td>Gecko, Trident: need to address; FF fires 1 4 1 and IE fires 1 1 1 while 1 is expected.</td>
@@ -430,7 +431,7 @@
         <td><a href="http://w3c-test.org/web-platform-tests/master/XMLHttpRequest/open-sync-open-send.htm">open-sync-open-send.htm</a></td>
         <td class="webkit notperformed">-</td>
         <td class="blink fail"><a href="about:blank">Fail</a></td>
-        <td class="gecko fail"><a href="about:blank">Fail</a></td>
+        <td class="gecko fail"><a title="[XHR2] Fires unexpected readyState 4 event on open-sync-open-send" href="https://bugzilla.mozilla.org/show_bug.cgi?id=918736">918736</a></td>
         <td class="trident fail"><a href="about:blank">Fail</a></td>
         <td class="presto fail"><a href="about:blank">Fail</a></td>
         <td>Blink: xhr.status must return 0 if the state is OPENED rather than raise error<br> Gecko, Trident: need to address; FF fires 1 4 1 and IE fires 1 1 1 while 1 is expected.</td>
@@ -520,7 +521,7 @@
         <td><a href="http://w3c-test.org/web-platform-tests/master/XMLHttpRequest/open-url-multi-window-2.htm">open-url-multi-window-2.htm</a></td>
         <td class="webkit notperformed">-</td>
         <td class="blink fail"><a href="about:blank">Fail</a></td>
-        <td class="gecko fail"><a href="about:blank">Fail</a></td>
+        <td class="gecko fail"><a title="[XHR2] Wrong exception: &quot;Unexpected error&quot; or &quot;failure&quot; is not &quot;DOMException InvalidStateError&quot;" href="https://bugzilla.mozilla.org/show_bug.cgi?id=918734">918734</a></td>
         <td class="trident fail"><a href="about:blank">Fail</a></td>
         <td class="presto fail"><a href="about:blank">Fail</a></td>
         <td>All: need to address.<br> Blink, Trident: do not throw.<br> Gecko raises Unexpected error.</td>
@@ -529,7 +530,7 @@
         <td><a href="http://w3c-test.org/web-platform-tests/master/XMLHttpRequest/open-url-multi-window-3.htm">open-url-multi-window-3.htm</a></td>
         <td class="webkit notperformed">-</td>
         <td class="blink fail"><a href="about:blank">Fail</a></td>
-        <td class="gecko fail"><a href="about:blank">Fail</a></td>
+        <td class="gecko fail"><a title="[XHR2] Wrong exception: &quot;Unexpected error&quot; or &quot;failure&quot; is not &quot;DOMException InvalidStateError&quot;" href="https://bugzilla.mozilla.org/show_bug.cgi?id=918734">918734</a></td>
         <td class="trident fail"><a href="about:blank">Fail</a></td>
         <td class="presto fail"><a href="about:blank">Fail</a></td>
         <td>send() with no document should be allowed or not?<br> Spec does not say anything; Hallvord made a PR to WHATWG with wording for this.</td>
@@ -547,7 +548,7 @@
         <td><a href="http://w3c-test.org/web-platform-tests/master/XMLHttpRequest/open-url-multi-window-5.htm">open-url-multi-window-5.htm</a></td>
         <td class="webkit notperformed">-</td>
         <td class="blink fail"><a href="about:blank">Fail</a></td>
-        <td class="gecko fail"><a href="about:blank">Fail</a></td>
+        <td class="gecko fail"><a title="[XHR2] Wrong exception: &quot;Unexpected error&quot; or &quot;failure&quot; is not &quot;DOMException InvalidStateError&quot;" href="https://bugzilla.mozilla.org/show_bug.cgi?id=918734">918734</a></td>
         <td class="trident fail"><a href="about:blank">Fail</a></td>
         <td class="presto fail"><a href="about:blank">Fail</a></td>
         <td>open() with reloaded document should be allowed or not? Currently spec does not say anything.</td>
@@ -592,7 +593,7 @@
         <td><a href="http://w3c-test.org/web-platform-tests/master/XMLHttpRequest/overridemimetype-done-state.htm">overridemimetype-done-state.htm</a></td>
         <td class="webkit notperformed">-</td>
         <td class="blink fail"><a href="about:blank">Fail</a></td>
-        <td class="gecko fail"><a href="about:blank">Fail</a></td>
+        <td class="gecko fail"><a title="[XHR2] overrideMimeType() in DONE state doesn't throw" href="https://bugzilla.mozilla.org/show_bug.cgi?id=918733">918733</a></td>
         <td class="trident fail"><a href="about:blank">Fail</a></td>
         <td class="presto fail"><a href="about:blank">Fail</a></td>
         <td>Blink, Gecko: does not throw in state 4.<br> Trident: TypeError rather than InvalidStateError.</td>
@@ -610,7 +611,7 @@
         <td><a href="http://w3c-test.org/web-platform-tests/master/XMLHttpRequest/overridemimetype-invalid-mime-type.htm">overridemimetype-invalid-mime-type.htm</a></td>
         <td class="webkit notperformed">-</td>
         <td class="blink fail"><a href="about:blank">Fail</a></td>
-        <td class="gecko fail"><a href="about:blank">Fail</a></td>
+        <td class="gecko fail"><a title="[XHR2] overrideMimeType() doesn't throw for invalid argument" href="https://bugzilla.mozilla.org/show_bug.cgi?id=918731">918731</a></td>
         <td class="trident fail"><a href="about:blank">Fail</a></td>
         <td class="presto fail"><a href="about:blank">Fail</a></td>
         <td>Blink, Gecko: does not throw in certain case.<br> Trident: TypeError rather than SyntaxError. Spec needs change for TypeError?</td>
@@ -727,7 +728,7 @@
         <td><a href="http://w3c-test.org/web-platform-tests/master/XMLHttpRequest/responsexml-document-properties.htm">responsexml-document-properties.htm</a></td>
         <td class="webkit notperformed">-</td>
         <td class="blink fail"><a href="about:blank">Fail(Partial)</a></td>
-        <td class="gecko fail"><a href="about:blank">Fail(Partial)</a></td>
+        <td class="gecko fail"><a title="[XHR2] responseXML.cookie is undefined, cookie property expected on Document" href="https://bugzilla.mozilla.org/show_bug.cgi?id=918768">918768</a>, <a title="[XHR2] responseXML.referrer is set, expected empty string" href="https://bugzilla.mozilla.org/show_bug.cgi?id=918773">918773</a></td>
         <td class="trident fail"><a href="about:blank">Fail(Partial)</a></td>
         <td class="presto fail"><a href="about:blank">Fail(Partial)</a></td>
         <td>-</td>
@@ -772,7 +773,7 @@
         <td><a href="http://w3c-test.org/web-platform-tests/master/XMLHttpRequest/send-accept.htm">send-accept.htm</a></td>
         <td class="webkit notperformed">-</td>
         <td class="blink fail"><a href="about:blank">Fail</a></td>
-        <td class="gecko fail"><a href="about:blank">Fail</a></td>
+        <td class="gecko fail"><a title="[XHR2] Default Accept: header more complex than */*" href="https://bugzilla.mozilla.org/show_bug.cgi?id=918752">918752</a></td>
         <td class="trident pass">Pass</td>
         <td class="presto fail"><a href="about:blank">Fail</a></td>
         <td>Blink: setRequestHeader("Accept", custom-value); is not effective.<br> Gecko: default Accept header value is set by Browser.<br> It seems browsers have their own default Accept header; Should it be allowed to replace the value with setRequestHeader()? or append?</td>
@@ -781,7 +782,7 @@
         <td><a href="http://w3c-test.org/web-platform-tests/master/XMLHttpRequest/send-after-setting-document-domain.htm">send-after-setting-document-domain.htm</a></td>
         <td class="webkit notperformed">-</td>
         <td class="blink pass">Pass</td>
-        <td class="gecko fail"><a href="about:blank">Fail(Partial)</a></td>
+        <td class="gecko fail"><a title="[XHR2] Wrong exception: &quot;failure&quot; is not a &quot;DOMException NetworkError&quot;" href="https://bugzilla.mozilla.org/show_bug.cgi?id=918751">918751</a></td>
         <td class="trident fail"><a href="about:blank">Fail(Partial)</a></td>
         <td class="presto pass">Pass</td>
         <td>-</td>
@@ -898,7 +899,7 @@
         <td><a href="http://w3c-test.org/web-platform-tests/master/XMLHttpRequest/send-content-type-charset.htm">send-content-type-charset.htm</a></td>
         <td class="webkit notperformed">-</td>
         <td class="blink fail"><a href="about:blank">Fail(Partial)</a></td>
-        <td class="gecko fail"><a href="about:blank">Fail(Partial)</a></td>
+        <td class="gecko fail"><a title="[XHR2] Implementation doesn't fix author-supplied charset correctly (corner cases)" href="https://bugzilla.mozilla.org/show_bug.cgi?id=918742">918742</a></td>
         <td class="trident fail"><a href="about:blank">Fail(Partial)</a></td>
         <td class="presto pass">Pass</td>
         <td>-</td>
@@ -907,7 +908,7 @@
         <td><a href="http://w3c-test.org/web-platform-tests/master/XMLHttpRequest/send-content-type-string.htm">send-content-type-string.htm</a></td>
         <td class="webkit notperformed">-</td>
         <td class="blink fail"><a href="about:blank">Fail(Partial)</a></td>
-        <td class="gecko fail"><a href="about:blank">Fail</a></td>
+        <td class="gecko fail"><a title="[XHR2] Extra space in content-type string (argue with Anne if you don't like this being a bug)" href="https://bugzilla.mozilla.org/show_bug.cgi?id=918739">918739</a></td>
         <td class="trident pass">Pass</td>
         <td class="presto fail"><a href="about:blank">Fail(Partial)</a></td>
         <td>Blink: Harness encountered an error.</td>
@@ -943,7 +944,7 @@
         <td><a href="http://w3c-test.org/web-platform-tests/master/XMLHttpRequest/send-entity-body-basic.htm">send-entity-body-basic.htm</a></td>
         <td class="webkit notperformed">-</td>
         <td class="blink pass">Pass</td>
-        <td class="gecko fail"><a href="about:blank">Fail(Partial)</a></td>
+        <td class="gecko fail"><a title="[XHR2] Test times out when passing array to send()" href="https://bugzilla.mozilla.org/show_bug.cgi?id=918760">918760</a></td>
         <td class="trident pass">Pass</td>
         <td class="presto pass">Pass</td>
         <td>-</td>
@@ -1006,7 +1007,7 @@
         <td><a href="http://w3c-test.org/web-platform-tests/master/XMLHttpRequest/send-network-error-async-events.htm">send-network-error-async-events.htm</a></td>
         <td class="webkit notperformed">-</td>
         <td class="blink pass">Pass</td>
-        <td class="gecko fail"><a href="about:blank">Fail(Partial)</a></td>
+        <td class="gecko fail"><a title="[XHR2] Fails to fire error and loadend events at upload object when network" href="https://bugzilla.mozilla.org/show_bug.cgi?id=918770">918770</a></td>
         <td class="trident pass">Pass</td>
         <td class="presto fail"><a href="about:blank">Fail(Partial)</a></td>
         <td>-</td>
@@ -1015,7 +1016,7 @@
         <td><a href="http://w3c-test.org/web-platform-tests/master/XMLHttpRequest/send-network-error-sync-events.htm">send-network-error-sync-events.htm</a></td>
         <td class="webkit notperformed">-</td>
         <td class="blink pass">Pass</td>
-        <td class="gecko fail"><a href="about:blank">Fail</a></td>
+        <td class="gecko fail"><a title="[XHR2] Wrong exception: &quot;failure&quot; is not a &quot;DOMException NetworkError&quot;" href="https://bugzilla.mozilla.org/show_bug.cgi?id=918751">918751</a></td>
         <td class="trident pass">Pass</td>
         <td class="presto pass">Pass</td>
         <td>-</td>
@@ -1051,7 +1052,7 @@
         <td><a href="http://w3c-test.org/web-platform-tests/master/XMLHttpRequest/send-non-same-origin.htm">send-non-same-origin.htm</a></td>
         <td class="webkit notperformed">-</td>
         <td class="blink pass">Pass</td>
-        <td class="gecko fail"><a href="about:blank">Fail</a></td>
+        <td class="gecko fail"><a title="[XHR2] Wrong exception: &quot;failure&quot; is not a &quot;DOMException NetworkError&quot;" href="https://bugzilla.mozilla.org/show_bug.cgi?id=918751">918751</a></td>
         <td class="trident fail"><a href="about:blank">Fail(Partial)</a></td>
         <td class="presto fail"><a href="about:blank">Fail(Partial)</a></td>
         <td>-</td>
@@ -1060,7 +1061,7 @@
         <td><a href="http://w3c-test.org/web-platform-tests/master/XMLHttpRequest/send-redirect-bogus-sync.htm">send-redirect-bogus-sync.htm</a></td>
         <td class="webkit notperformed">-</td>
         <td class="blink pass">Pass</td>
-        <td class="gecko fail"><a href="about:blank">Fail</a></td>
+        <td class="gecko fail"><a title="[XHR2] Wrong exception: &quot;failure&quot; is not a &quot;DOMException NetworkError&quot;" href="https://bugzilla.mozilla.org/show_bug.cgi?id=918751">918751</a></td>
         <td class="trident pass">Pass</td>
         <td class="presto fail"><a href="about:blank">Fail(Partial)</a></td>
         <td>-</td>
@@ -1069,7 +1070,7 @@
         <td><a href="http://w3c-test.org/web-platform-tests/master/XMLHttpRequest/send-redirect-bogus.htm">send-redirect-bogus.htm</a></td>
         <td class="webkit notperformed">-</td>
         <td class="blink pass">Pass</td>
-        <td class="gecko fail"><a href="about:blank">Fail(Partial)</a></td>
+        <td class="gecko fail"><a title="[XHR2] Returns real statusText for a failed redirect even when it's considered a network" href="https://bugzilla.mozilla.org/show_bug.cgi?id=918772">918772</a></td>
         <td class="trident pass">Pass</td>
         <td class="presto fail"><a href="about:blank">Fail(Partial)</a></td>
         <td>-</td>
@@ -1078,7 +1079,7 @@
         <td><a href="http://w3c-test.org/web-platform-tests/master/XMLHttpRequest/send-redirect-infinite-sync.htm">send-redirect-infinite-sync.htm</a></td>
         <td class="webkit notperformed">-</td>
         <td class="blink pass">Pass</td>
-        <td class="gecko fail"><a href="about:blank">Fail</a></td>
+        <td class="gecko fail"><a title="[XHR2] Wrong exception: &quot;failure&quot; is not a &quot;DOMException NetworkError&quot;" href="https://bugzilla.mozilla.org/show_bug.cgi?id=918751">918751</a></td>
         <td class="trident pass">Pass</td>
         <td class="presto notperformed">-</td>
         <td>Presto: test does not end.</td>
@@ -1105,7 +1106,7 @@
         <td><a href="http://w3c-test.org/web-platform-tests/master/XMLHttpRequest/send-redirect-to-cors.htm">send-redirect-to-cors.htm</a></td>
         <td class="webkit notperformed">-</td>
         <td class="blink fail"><a href="about:blank">Fail</a></td>
-        <td class="gecko fail"><a href="about:blank">Fail</a></td>
+        <td class="gecko fail"><a title="[XHR2] Does not allow redirects from same-origin to other origin, CORS-enabled URL" href="https://bugzilla.mozilla.org/show_bug.cgi?id=918767">918767</a></td>
         <td class="trident fail"><a href="about:blank">Fail</a></td>
         <td class="presto fail"><a href="about:blank">Fail</a></td>
         <td>-</td>
@@ -1132,7 +1133,7 @@
         <td><a href="http://w3c-test.org/web-platform-tests/master/XMLHttpRequest/send-response-event-order.htm">send-response-event-order.htm</a></td>
         <td class="webkit notperformed">-</td>
         <td class="blink pass">Pass</td>
-        <td class="gecko fail"><a href="about:blank">Fail</a></td>
+        <td class="gecko fail"><a title="[XHR2] Does not fire all expected events for XHR upload (progress, timeout, abort)" href="https://bugzilla.mozilla.org/show_bug.cgi?id=908375">908375</a></td>
         <td class="trident pass">Pass</td>
         <td class="presto pass">Pass</td>
         <td>-</td>
@@ -1159,7 +1160,7 @@
         <td><a href="http://w3c-test.org/web-platform-tests/master/XMLHttpRequest/send-response-upload-event-progress.htm">send-response-upload-event-progress.htm</a></td>
         <td class="webkit notperformed">-</td>
         <td class="blink pass">Pass</td>
-        <td class="gecko timeout"><a href="about:blank">Timeout</a></td>
+        <td class="gecko timeout"><a title="[XHR2] Does not fire all expected events for XHR upload (progress, timeout, abort)" href="https://bugzilla.mozilla.org/show_bug.cgi?id=908375">908375</a></td>
         <td class="trident pass">Pass</td>
         <td class="presto pass">Pass</td>
         <td>-</td>
@@ -1168,7 +1169,7 @@
         <td><a href="http://w3c-test.org/web-platform-tests/master/XMLHttpRequest/send-send.htm">send-send.htm</a></td>
         <td class="webkit notperformed">-</td>
         <td class="blink pass">Pass</td>
-        <td class="gecko fail"><a href="about:blank">Fail</a></td>
+        <td class="gecko fail"><a title="[XHR2] Wrong exception: &quot;Component not initialized&quot;/&quot;failure&quot; instead of &quot;DOMException InvalidStateError&quot;" href="https://bugzilla.mozilla.org/show_bug.cgi?id=918705">918705</a></td>
         <td class="trident pass">Pass</td>
         <td class="presto pass">Pass</td>
         <td>-</td>
@@ -1222,7 +1223,7 @@
         <td><a href="http://w3c-test.org/web-platform-tests/master/XMLHttpRequest/send-timeout-events.htm">send-timeout-events.htm</a></td>
         <td class="webkit notperformed">-</td>
         <td class="blink pass">Pass</td>
-        <td class="gecko fail"><a href="about:blank">Fail</a></td>
+        <td class="gecko fail"><a title="[XHR2] Does not fire all expected events for XHR upload (progress, timeout, abort)" href="https://bugzilla.mozilla.org/show_bug.cgi?id=908375">908375</a></td>
         <td class="trident pass">Pass</td>
         <td class="presto fail"><a href="about:blank">Fail</a></td>
         <td>-</td>
@@ -1249,7 +1250,7 @@
         <td><a href="http://w3c-test.org/web-platform-tests/master/XMLHttpRequest/setrequestheader-bogus-name.htm">setrequestheader-bogus-name.htm</a></td>
         <td class="webkit notperformed">-</td>
         <td class="blink pass">Pass</td>
-        <td class="gecko fail"><a href="about:blank">Fail(Partial)</a></td>
+        <td class="gecko fail"><a title="[XHR2] Wrong exception: &quot;TypeError&quot; is not &quot;DOMException SyntaxError&quot;" href="https://bugzilla.mozilla.org/show_bug.cgi?id=918764">918764</a></td>
         <td class="trident fail"><a href="about:blank">Fail(Partial)</a></td>
         <td class="presto pass">Pass</td>
         <td>-</td>
@@ -1258,7 +1259,7 @@
         <td><a href="http://w3c-test.org/web-platform-tests/master/XMLHttpRequest/setrequestheader-bogus-value.htm">setrequestheader-bogus-value.htm</a></td>
         <td class="webkit notperformed">-</td>
         <td class="blink pass">Pass</td>
-        <td class="gecko fail"><a href="about:blank">Fail(Partial)</a></td>
+        <td class="gecko fail"><a title="[XHR2] Wrong exception: &quot;TypeError&quot; is not &quot;DOMException SyntaxError&quot;" href="https://bugzilla.mozilla.org/show_bug.cgi?id=918764">918764</a></td>
         <td class="trident fail"><a href="about:blank">Fail(Partial)</a></td>
         <td class="presto fail"><a href="about:blank">Fail(Partial)</a></td>
         <td>-</td>
@@ -1267,7 +1268,7 @@
         <td><a href="http://w3c-test.org/web-platform-tests/master/XMLHttpRequest/setrequestheader-case-insensitive.htm">setrequestheader-case-insensitive.htm</a></td>
         <td class="webkit notperformed">-</td>
         <td class="blink pass">Pass</td>
-        <td class="gecko fail"><a href="about:blank">Fail</a></td>
+        <td class="gecko fail"><a title="[XHR2] Does not concatenate multiple header values" href="https://bugzilla.mozilla.org/show_bug.cgi?id=918763">918763</a></td>
         <td class="trident pass">Pass</td>
         <td class="presto pass">Pass</td>
         <td>-</td>
@@ -1276,7 +1277,7 @@
         <td><a href="http://w3c-test.org/web-platform-tests/master/XMLHttpRequest/setrequestheader-header-allowed.htm">setrequestheader-header-allowed.htm</a></td>
         <td class="webkit notperformed">-</td>
         <td class="blink fail"><a href="about:blank">Fail(Partial)</a></td>
-        <td class="gecko fail"><a href="about:blank">Fail(Partial)</a></td>
+        <td class="gecko fail"><a title="[XHR2] Does not concatenate multiple header values" href="https://bugzilla.mozilla.org/show_bug.cgi?id=918763">918763</a></td>
         <td class="trident fail"><a href="about:blank">Fail(Partial)</a></td>
         <td class="presto fail"><a href="about:blank">Fail(Partial)</a></td>
         <td>-</td>
@@ -1321,7 +1322,7 @@
         <td><a href="http://w3c-test.org/web-platform-tests/master/XMLHttpRequest/timeout-cors-async.htm">timeout-cors-async.htm</a></td>
         <td class="webkit notperformed">-</td>
         <td class="blink fail"><a href="about:blank">Fail</a></td>
-        <td class="gecko fail"><a href="about:blank">Fail</a></td>
+        <td class="gecko fail"><a title="[XHR2] readyState is not DONE in timeout event listener" href="https://bugzilla.mozilla.org/show_bug.cgi?id=918775">918775</a></td>
         <td class="trident fail"><a href="about:blank">Fail</a></td>
         <td class="presto fail"><a href="about:blank">Fail</a></td>
         <td>-</td>
@@ -1339,7 +1340,7 @@
         <td><a href="http://w3c-test.org/web-platform-tests/master/XMLHttpRequest/withcredentials-anonymous.htm">withcredentials-anonymous.htm</a></td>
         <td class="webkit notperformed">-</td>
         <td class="blink fail"><a href="about:blank">Fail</a></td>
-        <td class="gecko fail"><a href="about:blank">Fail</a></td>
+        <td class="gecko fail"><a title="[XHR2] withCredentials on anonymous request should throw" href="https://bugzilla.mozilla.org/show_bug.cgi?id=918776">918776</a>, <a title="[XHR2] Wrong exception: &quot;A parameter or an operation is not support...&quot; is not a &quot;DOMException InvalidStateError&quot;" href="https://bugzilla.mozilla.org/show_bug.cgi?id=918777">918777</a></td>
         <td class="trident fail"><a href="about:blank">Fail</a></td>
         <td class="presto fail"><a href="about:blank">Fail</a></td>
         <td>-</td>
@@ -1357,7 +1358,7 @@
         <td><a href="http://w3c-test.org/web-platform-tests/master/XMLHttpRequest/withcredentials-wrong-state.htm">withcredentials-wrong-state.htm</a></td>
         <td class="webkit notperformed">-</td>
         <td class="blink pass">Pass</td>
-        <td class="gecko fail"><a href="about:blank">Fail</a></td>
+        <td class="gecko fail"><a title="[XHR2] Wrong exception: &quot;A parameter or an operation is not support...&quot; is not a &quot;DOMException InvalidStateError&quot;" href="https://bugzilla.mozilla.org/show_bug.cgi?id=918777">918777</a></td>
         <td class="trident pass">Pass</td>
         <td class="presto pass">Pass</td>
         <td>-</td>
@@ -1384,7 +1385,7 @@
         <td><a href="http://w3c-test.org/web-platform-tests/master/XMLHttpRequest/xmlhttprequest-network-error-sync.htm">xmlhttprequest-network-error-sync.htm</a></td>
         <td class="webkit notperformed">-</td>
         <td class="blink pass">Pass</td>
-        <td class="gecko fail"><a href="about:blank">Fail</a></td>
+        <td class="gecko fail"><a title="[XHR2] Wrong exception: &quot;failure&quot; is not a &quot;DOMException NetworkError&quot;" href="https://bugzilla.mozilla.org/show_bug.cgi?id=918751">918751</a></td>
         <td class="trident pass">Pass</td>
         <td class="presto notperformed">-</td>
         <td>Presto: test does not end.</td>
@@ -1519,7 +1520,7 @@
         <td><a href="http://w3c-test.org/web-platform-tests/master/XMLHttpRequest/xmlhttprequest-unsent.htm">xmlhttprequest-unsent.htm</a></td>
         <td class="webkit notperformed">-</td>
         <td class="blink fail"><a href="about:blank">Fail</a></td>
-        <td class="gecko fail"><a href="about:blank">Fail</a></td>
+        <td class="gecko fail"><a title="[XHR2] Wrong exception: &quot;Component not initialized&quot;/&quot;failure&quot; instead of &quot;DOMException InvalidStateError&quot;" href="https://bugzilla.mozilla.org/show_bug.cgi?id=918705">918705</a></td>
         <td class="trident pass">Pass</td>
         <td class="presto pass">Pass</td>
         <td>-</td>
