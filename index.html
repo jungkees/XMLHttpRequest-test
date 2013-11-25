@@ -6,7 +6,7 @@
   <link rel=stylesheet href="styles/style.css" type="text/css">
 </head>
 <body>
-  <p class="title"><a href="https://dvcs.w3.org/hg/xhr/raw-file/tip/Overview.html" target="_blank">W3C <em>XMLHttpRequest</em></a> <a href="http://w3c-test.org/web-platform-tests/master/XMLHttpRequest/" target="_blank"><em>Test</em></a> Result</p>
+  <p class="title"><a href="https://dvcs.w3.org/hg/xhr/raw-file/tip/xhr-1/Overview.html" target="_blank">W3C XMLHttpRequest Level 1</a> <a href="http://w3c-test.org/web-platform-tests/master/XMLHttpRequest/" target="_blank">Test</a> Result</p>
   <p class="notice">* To contributors: please make a PR on any invalid test results. Updating with the links to filed bugs are very welcome!</p>
   <table summary="XMLHttpRequest test results for major web browser engines">
 
@@ -14,7 +14,7 @@
       <tr>
         <th scope="col">Test</th>
         <th scope="col" title="-">WebKit</th>
-        <th scope="col" title="Chrome 32.0.1676.2 canary">Blink</th>
+        <th scope="col" title="Chrome 33.0.1712.4 dev">Blink</th>
         <th scope="col" title="Firefox Nightly 27.0a1">Gecko</th>
         <th scope="col" title="IE10">Trident</th>
         <th scope="col" title="Opera 12.16">Presto</th>
@@ -25,7 +25,7 @@
       <tr>
         <td><a href="http://w3c-test.org/web-platform-tests/master/XMLHttpRequest/abort-after-receive.htm">abort-after-receive.htm</a></td>
         <td class="webkit notperformed">-</td>
-        <td class="blink fail"><a title="[XHR] abort() should not fire progress event named abort when readyState === 4" href="https://code.google.com/p/chromium/issues/detail?id=315470">315470</a></td>
+        <td class="blink pass"><a title="[XHR] abort() should not fire progress event named abort when readyState === 4" href="https://code.google.com/p/chromium/issues/detail?id=315470">Pass</a></td>
         <td class="gecko pass">Pass</td>
         <td class="trident pass">Pass</td>
         <td class="presto pass">Pass</td>
@@ -43,7 +43,7 @@
       <tr>
         <td><a href="http://w3c-test.org/web-platform-tests/master/XMLHttpRequest/abort-after-timeout.htm">abort-after-timeout.htm</a></td>
         <td class="webkit notperformed">-</td>
-        <td class="blink fail"><a title="[XHR] abort() should not fire progress event named abort when readyState === 4" href="https://code.google.com/p/chromium/issues/detail?id=315470">315470</a></td>
+        <td class="blink pass"><a title="[XHR] abort() should not fire progress event named abort when readyState === 4" href="https://code.google.com/p/chromium/issues/detail?id=315470">Pass</a></td>
         <td class="gecko pass">Pass</td>
         <td class="trident fail"><a href="about:blank">Fail</a></td>
         <td class="presto pass">Pass</td>
@@ -88,7 +88,7 @@
       <tr>
         <td><a href="http://w3c-test.org/web-platform-tests/master/XMLHttpRequest/abort-event-abort.htm">abort-event-abort.htm</a></td>
         <td class="webkit notperformed">-</td>
-        <td class="blink fail"><a title="[XHR] abort() should not fire progress event named abort when readyState === 1 with send() flag being unset" href="https://code.google.com/p/chromium/issues/detail?id=315490">315490</a></td>
+        <td class="blink pass"><a title="[XHR] abort() should not fire progress event named abort when readyState === 1 with send() flag being unset" href="https://code.google.com/p/chromium/issues/detail?id=315490">Pass</a></td>
         <td class="gecko fail"><a title="[XHR2] Wrong exception: &quot;Component not initialized&quot;/&quot;failure&quot; instead of &quot;DOMException InvalidStateError&quot;" href="https://bugzilla.mozilla.org/show_bug.cgi?id=918705">918705</a></td>
         <td class="trident pass">Pass</td>
         <td class="presto pass">Pass</td>
@@ -139,7 +139,7 @@
         <td class="presto fail"><a href="about:blank">Fail</a></td>
         <td>-</td>
       </tr>
-      <tr>
+      <!--tr>
         <td><a href="http://w3c-test.org/web-platform-tests/master/XMLHttpRequest/data-uri-basic.htm">data-uri-basic.htm</a></td>
         <td class="webkit notperformed">-</td>
         <td class="blink fail"><a href="about:blank">Fail</a></td>
@@ -147,8 +147,8 @@
         <td class="trident fail"><a href="about:blank">Fail</a></td>
         <td class="presto fail"><a href="about:blank">Fail(Partial)</a></td>
         <td>Not supported in Level 1.</td>
-      </tr>
-      <tr>
+      </tr-->
+      <!--tr>
         <td><a href="http://w3c-test.org/web-platform-tests/master/XMLHttpRequest/data-uri.htm">data-uri.htm</a></td>
         <td class="webkit notperformed">-</td>
         <td class="blink fail"><a href="about:blank">Fail</a></td>
@@ -156,7 +156,7 @@
         <td class="trident fail"><a href="about:blank">Fail</a></td>
         <td class="presto fail"><a href="about:blank">Fail</a></td>
         <td>Not supported in Level 1.</td>
-      </tr>
+      </tr-->
       <tr>
         <td><a href="http://w3c-test.org/web-platform-tests/master/XMLHttpRequest/event-abort.htm">event-abort.htm</a></td>
         <td class="webkit notperformed">-</td>
@@ -1520,7 +1520,7 @@
     <tfoot>
     </tfoot>
   </table>
-  <p class="notice">* Last update: 6th of Nov, 2013</p>
+  <p class="notice">* Last update: 25th of Nov, 2013</p>
   <script src="scripts/main.js"></script>
 </body>
 </html>
