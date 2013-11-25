@@ -47,6 +47,10 @@ table td.pass
 	color: green;
 	text-align: center;
 }
+table td.pass a:link
+{
+	color: green;
+}
 table td.fail
 {
 	color: red;
