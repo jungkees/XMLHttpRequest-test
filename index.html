@@ -15,7 +15,7 @@
         <th scope="col">Test</th>
         <th scope="col" title="Safari 7.0 (9537.71)">WebKit</th>
         <th scope="col" title="Chrome 33.0.1750.27 dev">Blink</th>
-        <th scope="col" title="Firefox Nightly 27.0a1">Gecko</th>
+        <th scope="col" title="Firefox Nightly 29.0a1">Gecko</th>
         <th scope="col" title="IE10">Trident</th>
         <th scope="col" title="Opera 12.16">Presto</th>
         <th scope="col">Remark</th>
@@ -206,7 +206,7 @@
         <td><a href="http://w3c-test.org/web-platform-tests/master/XMLHttpRequest/event-readystatechange-loaded.htm">event-readystatechange-loaded.htm</a></td>
         <td class="webkit fail"><a href="about:blank">Fail</a></td>
         <td class="blink pass">Pass</td>
-        <td class="gecko fail"><a title="[XHR2] Too many readystatechange events in LOADING state (readyState 3)" href="https://bugzilla.mozilla.org/show_bug.cgi?id=918719">918719</a></td>
+        <td class="gecko pass"><a title="[XHR2] Too many readystatechange events in LOADING state (readyState 3)" href="https://bugzilla.mozilla.org/show_bug.cgi?id=918719">Pass</a></td>
         <td class="trident fail"><a href="about:blank">Fail</a></td>
         <td class="presto pass">Pass</td>
         <td>All except Presto: fire multiple "LOADING"</td>
@@ -242,10 +242,10 @@
         <td><a href="http://w3c-test.org/web-platform-tests/master/XMLHttpRequest/formdata.htm">formdata.htm</a></td>
         <td class="webkit pass">Pass</td>
         <td class="blink pass">Pass</td>
-        <td class="gecko notrun"><a href="about:blank">NotRun</a></td>
+        <td class="gecko timeout"><a href="about:blank">Timeout</a></td>
         <td class="trident pass">Pass</td>
         <td class="presto pass">Pass</td>
-        <td>Gecko: TypeError</td>
+        <td>Gecko: Harness error</td>
       </tr>
       <tr>
         <td><a href="http://w3c-test.org/web-platform-tests/master/XMLHttpRequest/getallresponseheaders-cookies.htm">getallresponseheaders-cookies.htm</a></td>
@@ -620,7 +620,7 @@
         <td><a href="http://w3c-test.org/web-platform-tests/master/XMLHttpRequest/overridemimetype-loading-state.htm">overridemimetype-loading-state.htm</a></td>
         <td class="webkit timeout"><a href="about:blank">Timeout</a></td>
         <td class="blink timeout"><a href="about:blank">Timeout</a></td>
-        <td class="gecko notrun"><a href="about:blank">NotRun</a></td>
+        <td class="gecko timeout"><a href="about:blank">Timeout</a></td>
         <td class="trident notrun"><a href="about:blank">NotRun</a></td>
         <td class="presto notrun"><a href="about:blank">NotRun</a></td>
         <td>Harness error?</td>
@@ -701,7 +701,7 @@
         <td><a href="http://w3c-test.org/web-platform-tests/master/XMLHttpRequest/responsetext-decoding.htm">responsetext-decoding.htm</a></td>
         <td class="webkit fail"><a href="about:blank">Fail(Partial)</a></td>
         <td class="blink fail"><a href="about:blank">Fail</a></td>
-        <td class="gecko fail"><a href="about:blank">Fail(Partial)</a></td>
+        <td class="gecko fail"><a href="about:blank">Fail</a></td>
         <td class="trident fail"><a href="about:blank">Fail(Partial)</a></td>
         <td class="presto fail"><a href="about:blank">Fail(Partial)</a></td>
         <td>-</td>
@@ -719,7 +719,7 @@
         <td><a href="http://w3c-test.org/web-platform-tests/master/XMLHttpRequest/responsexml-basic.htm">responsexml-basic.htm</a></td>
         <td class="webkit fail"><a href="about:blank">Fail(Partial)</a></td>
         <td class="blink fail"><a href="about:blank">Fail(Partial)</a></td>
-        <td class="gecko fail"><a href="about:blank">Fail(Partial)</a></td>
+        <td class="gecko pass">Pass</td>
         <td class="trident pass">Pass</td>
         <td class="presto fail"><a href="about:blank">Fail(Partial)</a></td>
         <td>-</td>
@@ -755,7 +755,7 @@
         <td><a href="http://w3c-test.org/web-platform-tests/master/XMLHttpRequest/responsexml-non-well-formed.htm">responsexml-non-well-formed.htm</a></td>
         <td class="webkit pass">Pass</td>
         <td class="blink pass">Pass</td>
-        <td class="gecko fail"><a href="about:blank">Fail</a></td>
+        <td class="gecko pass">Pass</td>
         <td class="trident pass">Pass</td>
         <td class="presto pass">Pass</td>
         <td>-</td>
@@ -1088,7 +1088,7 @@
         <td><a href="http://w3c-test.org/web-platform-tests/master/XMLHttpRequest/send-redirect-infinite.htm">send-redirect-infinite.htm</a></td>
         <td class="webkit pass">Pass</td>
         <td class="blink pass">Pass</td>
-        <td class="gecko notrun"><a href="about:blank">NotRun</a></td>
+        <td class="gecko fail"><a href="about:blank">Fail</a></td>
         <td class="trident notrun"><a href="about:blank">NotRun</a></td>
         <td class="presto notrun"><a href="about:blank">NotRun</a></td>
         <td>-</td>
@@ -1322,7 +1322,7 @@
         <td><a href="http://w3c-test.org/web-platform-tests/master/XMLHttpRequest/timeout-cors-async.htm">timeout-cors-async.htm</a></td>
         <td class="webkit fail"><a href="about:blank">Fail</a></td>
         <td class="blink pass">Pass</td>
-        <td class="gecko fail"><a title="[XHR2] readyState is not DONE in timeout event listener" href="https://bugzilla.mozilla.org/show_bug.cgi?id=918775">918775</a></td>
+        <td class="gecko pass"><a title="[XHR2] readyState is not DONE in timeout event listener" href="https://bugzilla.mozilla.org/show_bug.cgi?id=918775">Pass</a></td>
         <td class="trident fail"><a href="about:blank">Fail</a></td>
         <td class="presto fail"><a href="about:blank">Fail</a></td>
         <td>-</td>
@@ -1385,7 +1385,7 @@
         <td><a href="http://w3c-test.org/web-platform-tests/master/XMLHttpRequest/xmlhttprequest-network-error.htm">xmlhttprequest-network-error.htm</a></td>
         <td class="webkit fail"><a href="about:blank">Fail</a></td>
         <td class="blink pass">Pass</td>
-        <td class="gecko timeout"><a href="about:blank">Timeout</a></td>
+        <td class="gecko fail"><a href="about:blank">Fail</a></td>
         <td class="trident timeout"><a href="about:blank">Timeout</a></td>
         <td class="presto timeout"><a href="about:blank">Timeout</a></td>
         <td>-</td>
@@ -1412,7 +1412,7 @@
         <td><a href="http://w3c-test.org/web-platform-tests/master/XMLHttpRequest/xmlhttprequest-timeout-overrides.html">xmlhttprequest-timeout-overrides.html</a></td>
         <td class="webkit fail"><a href="about:blank">Fail(Partial)</a></td>
         <td class="blink fail"><a href="about:blank">Fail(Partial)</a></td>
-        <td class="gecko fail"><a href="about:blank">Fail(Partial)</a></td>
+        <td class="gecko pass">Pass</td>
         <td class="trident fail"><a href="about:blank">Fail</a></td>
         <td class="presto fail"><a href="about:blank">Fail(Partial)</a></td>
         <td>Trident: Harness encountered an error.</td>
