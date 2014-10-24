@@ -3,6 +3,19 @@
 
   var log = console.log.bind(console);
 
+  // add some class names to TR to be able to easily hide/show certain categories.
+  for(var trs = document.getElementsByTagName('tr'), tr, i = 0; tr = trs[i]; i++){
+    var numResults = tr.cells.length - 2;
+    if(tr.getElementsByClassName('pass').length === numResults){
+      tr.classList.add('allpass');
+    }else if(tr.getElementsByClassName('fail').length === numResults){
+      tr.classList.add('allfail');
+    }else if (i > 0) {
+      tr.classList.add('mixed');
+    };
+    var passes = tr.getElementsByClassName('pass').length;
+  }
+
   var results = {
   	// webkit
     webkit: {
@@ -62,7 +75,7 @@
   });
 
   var tr = document.createElement("tr");
-  
+
   var nodeValue = {};
 
   // calculate the pass ratio and show it!
@@ -91,4 +104,25 @@
   });
 
   document.getElementsByTagName("tfoot")[0].appendChild(tr);
+
+  var div = document.body.appendChild(elm('div'));
+  var cb = elm('input', '', {type:'checkbox'}, div.appendChild(elm('label')));
+  cb.onchange = function(){this.checked ? document.body.classList.add('show_only_fail') : document.body.classList.remove('show_only_fail'); }
+  cb.parentNode.appendChild(document.createTextNode(' Show only tests that fail everywhere'))
+  function elm(tag, text, attributes, parent){
+    var elm = document.createElement(tag);
+    if(attributes){
+      for(var attr in attributes){
+        elm.setAttribute(attr, attributes[attr]);
+      }
+    }
+    if(text){
+      elm.appendChild(document.createTextNode(text));
+    }
+    if(parent){
+      parent.appendChild(elm);
+    }
+    return elm;
+  }
+
 })();

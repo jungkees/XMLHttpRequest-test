@@ -158,15 +158,6 @@
         <td>-</td>
       </tr>
       <!--tr>
-        <td><a href="http://w3c-test.org/XMLHttpRequest/data-uri-basic.htm">data-uri-basic.htm</a></td>
-        <td class="webkit pass">Pass</td>
-        <td class="blink fail"><a href="about:blank">Fail</a></td>
-        <td class="gecko fail"><a title="[XHR2] Do not fake content-length header for data: URLs" href="https://bugzilla.mozilla.org/show_bug.cgi?id=924319">924319</a></td>
-        <td class="trident fail"><a href="about:blank">Fail</a></td>
-        <td class="presto fail"><a href="about:blank">Fail(Partial)</a></td>
-        <td>Not supported in Level 1.</td>
-      </tr-->
-      <!--tr>
         <td><a href="http://w3c-test.org/XMLHttpRequest/data-uri.htm">data-uri.htm</a></td>
         <td class="webkit pass">Pass</td>
         <td class="blink fail"><a href="about:blank">Fail</a></td>
@@ -372,6 +363,24 @@
         <td class="trident pass">Pass</td>
         <td class="presto pass">Pass</td>
         <td>-</td>
+      </tr>
+      <tr>
+        <td><a href="http://w3c-test.org/XMLHttpRequest/open-during-abort-event.htm">open-during-abort-event.htm</a></td>
+        <td class="webkit "></td>
+        <td class="blink "></td>
+        <td class="gecko "></td>
+        <td class="trident "></td>
+        <td class="presto "></td>
+        <td>Spec still under discussion, correct pass condition not determined yet</td>
+      </tr>
+      <tr>
+        <td><a href="http://w3c-test.org/XMLHttpRequest/open-during-abort-processing.htm">open-during-abort-processing.htm</a></td>
+        <td class="webkit "></td>
+        <td class="blink "></td>
+        <td class="gecko "></td>
+        <td class="trident "></td>
+        <td class="presto "></td>
+        <td>Spec still under discussion, correct pass condition not determined yet</td>
       </tr>
       <tr>
         <td><a href="http://w3c-test.org/XMLHttpRequest/open-method-bogus.htm">open-method-bogus.htm</a></td>
@@ -678,6 +687,15 @@
         <td class="trident fail"><a href="about:blank">Fail</a></td>
         <td class="presto pass">Pass</td>
         <td>Trident: overrideMimeType not supported.</td>
+      </tr>
+      <tr>
+        <td><a href="http://w3c-test.org/XMLHttpRequest/progress-events-response-data-gzip.htm">progress-events-response-data-gzip.htm</a></td>
+        <td class="webkit"></td>
+        <td class="blink pass">Pass</td>
+        <td class="gecko fail">Fail</td>
+        <td class="trident fail">Fail</td>
+        <td class="presto"></td>
+        <td>-</td>
       </tr>
       <tr>
         <td><a href="http://w3c-test.org/XMLHttpRequest/response-data-arraybuffer.htm">response-data-arraybuffer.htm</a></td>
@@ -1202,6 +1220,15 @@
         <td>-</td>
       </tr>
       <tr>
+        <td><a href="http://w3c-test.org/XMLHttpRequest/send-sync-blocks-async.htm">send-sync-blocks-async.htm</a></td>
+        <td class="webkit "></td>
+        <td class="blink pass">Pass</td>
+        <td class="gecko fail">Fail</td>
+        <td class="trident fail">Fail</td>
+        <td class="presto "></td>
+        <td>-</td>
+      </tr>
+      <tr>
         <td><a href="http://w3c-test.org/XMLHttpRequest/send-sync-no-response-event-load.htm">send-sync-no-response-event-load.htm</a></td>
         <td class="webkit pass">Pass</td>
         <td class="blink pass">Pass</td>
@@ -1456,11 +1483,11 @@
       <tr>
         <td><a href="http://w3c-test.org/XMLHttpRequest/xmlhttprequest-timeout-aborted.html">xmlhttprequest-timeout-aborted.html*</a></td>
         <td class="webkit notperformed">-</td>
-        <td class="blink notperformed">-</td>
-        <td class="gecko notperformed">-</td>
-        <td class="trident notperformed">-</td>
+        <td class="blink pass">Pass</td>
+        <td class="gecko pass">Pass</td>
+        <td class="trident pass">Pass</td>
         <td class="presto notperformed">-</td>
-        <td>All: TC error? Need to check.</td>
+        <td>-</td>
       </tr>
       <tr>
         <td><a href="http://w3c-test.org/XMLHttpRequest/xmlhttprequest-timeout-abortedonmain.html">xmlhttprequest-timeout-abortedonmain.html</a></td>
