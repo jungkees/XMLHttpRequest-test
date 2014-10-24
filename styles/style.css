@@ -104,3 +104,7 @@ table tbody tr:hover td
 	margin: 12px;
 	font-size: 12px;
 }
+
+.show_only_fail tr.allpass, .show_only_fail tr.mixed{
+	display: none;
+}
