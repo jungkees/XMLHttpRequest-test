@@ -14,8 +14,8 @@
       <tr>
         <th scope="col">Test</th>
         <th scope="col" title="Safari 7.0.2 (9537.74.9)">WebKit</th>
-        <th scope="col" title="Chrome 35.0.1916.6 canary">Blink</th>
-        <th scope="col" title="Firefox Nightly 31.0a1">Gecko</th>
+        <th scope="col" title="Chrome 38.0.2125.104">Blink</th>
+        <th scope="col" title="Firefox 33.0.1">Gecko</th>
         <th scope="col" title="IE10">Trident</th>
         <th scope="col" title="Opera 12.16">Presto</th>
         <th scope="col">Remark</th>
@@ -97,7 +97,7 @@
       <tr>
         <td><a href="http://w3c-test.org/XMLHttpRequest/abort-during-upload.htm">abort-during-upload.htm</a></td>
         <td class="webkit fail"><a href="about:blank">Fail</a></td>
-        <td class="blink fail"><a title="[XHR] Too few progress events being fired" href="https://code.google.com/p/chromium/issues/detail?id=315488">315488</a></td>
+        <td class="blink pass">Pass</td>
         <td class="gecko fail"><a title="[XHR2] Too few progress events being fired" href="https://bugzilla.mozilla.org/show_bug.cgi?id=918703">918703</a></td>
         <td class="trident fail"><a href="about:blank">Fail</a></td>
         <td class="presto fail"><a href="about:blank">Fail</a></td>
@@ -143,7 +143,7 @@
         <td><a href="http://w3c-test.org/XMLHttpRequest/abort-upload-event-abort.htm">abort-upload-event-abort.htm</a></td>
         <td class="webkit pass">Pass</td>
         <td class="blink pass">Pass</td>
-        <td class="gecko fail"><a href="about:blank">Fail</a></td>
+        <td class="gecko pass">Pass</td>
         <td class="trident fail"><a href="about:blank">Fail</a></td>
         <td class="presto fail"><a href="about:blank">Fail</a></td>
         <td>-</td>
@@ -152,7 +152,7 @@
         <td><a href="http://w3c-test.org/XMLHttpRequest/abort-upload-event-loadend.htm">abort-upload-event-loadend.htm</a></td>
         <td class="webkit pass">Pass</td>
         <td class="blink pass">Pass</td>
-        <td class="gecko fail"><a href="about:blank">Fail</a></td>
+        <td class="gecko pass">Pass</td>
         <td class="trident fail"><a href="about:blank">Fail</a></td>
         <td class="presto fail"><a href="about:blank">Fail</a></td>
         <td>-</td>
@@ -364,7 +364,7 @@
         <td class="presto pass">Pass</td>
         <td>-</td>
       </tr>
-      <tr>
+      <!--tr>
         <td><a href="http://w3c-test.org/XMLHttpRequest/open-during-abort-event.htm">open-during-abort-event.htm</a></td>
         <td class="webkit "></td>
         <td class="blink "></td>
@@ -372,8 +372,8 @@
         <td class="trident "></td>
         <td class="presto "></td>
         <td>Spec still under discussion, correct pass condition not determined yet</td>
-      </tr>
-      <tr>
+      </tr-->
+      <!--tr>
         <td><a href="http://w3c-test.org/XMLHttpRequest/open-during-abort-processing.htm">open-during-abort-processing.htm</a></td>
         <td class="webkit "></td>
         <td class="blink "></td>
@@ -381,7 +381,7 @@
         <td class="trident "></td>
         <td class="presto "></td>
         <td>Spec still under discussion, correct pass condition not determined yet</td>
-      </tr>
+      </tr-->
       <tr>
         <td><a href="http://w3c-test.org/XMLHttpRequest/open-method-bogus.htm">open-method-bogus.htm</a></td>
         <td class="webkit pass">Pass</td>
@@ -403,7 +403,7 @@
       <tr>
         <td><a href="http://w3c-test.org/XMLHttpRequest/open-method-case-sensitive.htm">open-method-case-sensitive.htm</a></td>
         <td class="webkit fail"><a href="about:blank">Fail(Partial)</a></td>
-        <td class="blink fail"><a href="about:blank">Fail(Partial)</a></td>
+        <td class="blink pass">Pass</td>
         <td class="gecko pass"><a title="[XHR2] XHR implementation upper-cases too many (i.e. all) HTTP verbs" href="https://bugzilla.mozilla.org/show_bug.cgi?id=918722">Pass</a></td>
         <td class="trident pass">Pass</td>
         <td class="presto pass">Pass</td>
@@ -574,7 +574,7 @@
       <tr>
         <td><a href="http://w3c-test.org/XMLHttpRequest/open-url-multi-window-4.htm">open-url-multi-window-4.htm</a></td>
         <td class="webkit timeout"><a href="about:blank">Timeout</a></td>
-        <td class="blink timeout"><a href="about:blank">Timeout</a></td>
+        <td class="blink fail"><a href="about:blank">Fail</a></td>
         <td class="gecko timeout"><a href="about:blank">Timeout</a></td>
         <td class="trident fail"><a href="about:blank">Fail</a></td>
         <td class="presto timeout"><a href="about:blank">Timeout</a></td>
@@ -655,7 +655,7 @@
       <tr>
         <td><a href="http://w3c-test.org/XMLHttpRequest/overridemimetype-loading-state.htm">overridemimetype-loading-state.htm</a></td>
         <td class="webkit timeout"><a href="about:blank">Timeout</a></td>
-        <td class="blink timeout"><a href="about:blank">Timeout</a></td>
+        <td class="blink fail">Fail</td>
         <td class="gecko pass">Pass</td>
         <td class="trident notrun"><a href="about:blank">NotRun</a></td>
         <td class="presto notrun"><a href="about:blank">NotRun</a></td>
@@ -736,8 +736,8 @@
       <tr>
         <td><a href="http://w3c-test.org/XMLHttpRequest/response-json.htm">response-json.htm*</a></td>
         <td class="webkit fail"><a href="about:blank">Fail</a></td>
-        <td class="blink fail"><a href="about:blank">Fail</a></td>
-        <td class="gecko fail"><a href="about:blank">Fail</a></td>
+        <td class="blink fail"><a href="about:blank">Fail(Partial)</a></td>
+        <td class="gecko pass">Pass</td>
         <td class="trident fail"><a href="about:blank">Fail</a></td>
         <td class="presto pass">Pass</td>
         <td>Not supported in Level 1. TC error?</td>
@@ -790,7 +790,7 @@
       <tr>
         <td><a href="http://w3c-test.org/XMLHttpRequest/responsexml-non-document-types.htm">responsexml-non-document-types.htm</a></td>
         <td class="webkit fail"><a href="about:blank">Fail</a></td>
-        <td class="blink fail"><a href="about:blank">Fail</a></td>
+        <td class="blink pass">Pass</td>
         <td class="gecko fail"><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=707484" title="[XHR2] Allow setting XHR responseType and withCredentials before open">707484</a></td>
         <td class="trident fail"><a href="about:blank">Fail</a></td>
         <td class="presto pass">Pass</td>
@@ -1048,7 +1048,7 @@
         <td class="presto pass">Pass</td>
         <td>-</td>
       </tr>
-      <tr>
+      <!--tr>
         <td><a href="http://w3c-test.org/XMLHttpRequest/send-network-error-async-events.htm">send-network-error-async-events.htm</a></td>
         <td class="webkit fail"><a href="about:blank">Fail</a></td>
         <td class="blink pass">Pass</td>
@@ -1056,8 +1056,8 @@
         <td class="trident pass">Pass</td>
         <td class="presto fail"><a href="about:blank">Fail(Partial)</a></td>
         <td>-</td>
-      </tr>
-      <tr>
+      </tr-->
+      <!--tr>
         <td><a href="http://w3c-test.org/XMLHttpRequest/send-network-error-sync-events.htm">send-network-error-sync-events.htm</a></td>
         <td class="webkit fail"><a href="about:blank">Fail</a></td>
         <td class="blink pass">Pass</td>
@@ -1065,7 +1065,7 @@
         <td class="trident pass">Pass</td>
         <td class="presto pass">Pass</td>
         <td>-</td>
-      </tr>
+      </tr-->
       <tr>
         <td><a href="http://w3c-test.org/XMLHttpRequest/send-no-response-event-loadend.htm">send-no-response-event-loadend.htm</a></td>
         <td class="webkit pass">Pass</td>
@@ -1093,7 +1093,7 @@
         <td class="presto pass">Pass</td>
         <td>-</td>
       </tr>
-      <tr>
+      <!--tr>
         <td><a href="http://w3c-test.org/XMLHttpRequest/send-non-same-origin.htm">send-non-same-origin.htm</a></td>
         <td class="webkit fail"><a href="about:blank">Fail</a></td>
         <td class="blink pass">Pass</td>
@@ -1101,7 +1101,7 @@
         <td class="trident fail"><a href="about:blank">Fail(Partial)</a></td>
         <td class="presto fail"><a href="about:blank">Fail(Partial)</a></td>
         <td>-</td>
-      </tr>
+      </tr-->
       <tr>
         <td><a href="http://w3c-test.org/XMLHttpRequest/send-redirect-bogus-sync.htm">send-redirect-bogus-sync.htm</a></td>
         <td class="webkit fail"><a href="about:blank">Fail</a></td>
@@ -1339,7 +1339,7 @@
       <tr>
         <td><a href="http://w3c-test.org/XMLHttpRequest/setrequestheader-header-allowed.htm">setrequestheader-header-allowed.htm</a></td>
         <td class="webkit fail"><a href="about:blank">Fail(Partial)</a></td>
-        <td class="blink fail"><a href="about:blank">Fail(Partial)</a></td>
+        <td class="blink pass">Pass</td>
         <td class="gecko fail"><a title="[XHR2] Does not concatenate multiple header values" href="https://bugzilla.mozilla.org/show_bug.cgi?id=918763">918763</a></td>
         <td class="trident fail"><a href="about:blank">Fail(Partial)</a></td>
         <td class="presto fail"><a href="about:blank">Fail(Partial)</a></td>
@@ -1348,7 +1348,7 @@
       <tr>
         <td><a href="http://w3c-test.org/XMLHttpRequest/setrequestheader-header-forbidden.htm">setrequestheader-header-forbidden.htm</a></td>
         <td class="webkit fail"><a href="about:blank">Fail</a></td>
-        <td class="blink fail"><a href="about:blank">Fail</a></td>
+        <td class="blink pass">Pass</td>
         <td class="gecko pass">Pass</td>
         <td class="trident pass">Pass</td>
         <td class="presto pass">Pass</td>
@@ -1366,7 +1366,7 @@
       <tr>
         <td><a href="http://w3c-test.org/XMLHttpRequest/setrequestheader-open-setrequestheader.htm">setrequestheader-open-setrequestheader.htm</a></td>
         <td class="webkit fail"><a href="about:blank">Fail</a></td>
-        <td class="blink fail"><a href="about:blank">Fail</a></td>
+        <td class="blink pass">Pass</td>
         <td class="gecko pass">Pass</td>
         <td class="trident pass">Pass</td>
         <td class="presto pass">Pass</td>
@@ -1417,7 +1417,7 @@
         <td class="presto fail"><a href="about:blank">Fail</a></td>
         <td>-</td>
       </tr>
-      <tr>
+      <!--tr>
         <td><a href="http://w3c-test.org/XMLHttpRequest/withcredentials-anonymous.htm">withcredentials-anonymous.htm</a></td>
         <td class="webkit pass">Pass</td>
         <td class="blink pass">Pass</td>
@@ -1425,7 +1425,7 @@
         <td class="trident fail"><a href="about:blank">Fail(Partial)</a></td>
         <td class="presto pass">Pass</td>
         <td>-</td>
-      </tr>
+      </tr-->
       <tr>
         <td><a href="http://w3c-test.org/XMLHttpRequest/withcredentials-set.htm">withcredentials-set.htm</a></td>
         <td class="webkit pass">Pass</td>
@@ -1501,7 +1501,7 @@
       <tr>
         <td><a href="http://w3c-test.org/XMLHttpRequest/xmlhttprequest-timeout-overrides.html">xmlhttprequest-timeout-overrides.html</a></td>
         <td class="webkit fail"><a href="about:blank">Fail(Partial)</a></td>
-        <td class="blink fail"><a href="about:blank">Fail(Partial)</a></td>
+        <td class="blink pass">Pass</td>
         <td class="gecko pass">Pass</td>
         <td class="trident fail"><a href="about:blank">Fail</a></td>
         <td class="presto fail"><a href="about:blank">Fail(Partial)</a></td>
@@ -1520,7 +1520,7 @@
         <td><a href="http://w3c-test.org/XMLHttpRequest/xmlhttprequest-timeout-simple.html">xmlhttprequest-timeout-simple.html</a></td>
         <td class="webkit pass">Pass</td>
         <td class="blink pass">Pass</td>
-        <td class="gecko fail"><a href="about:blank">Fail(Partial)</a></td>
+        <td class="gecko pass">Pass</td>
         <td class="trident fail"><a href="about:blank">Fail(Partial)</a></td>
         <td class="presto fail"><a href="about:blank">Fail(Partial)</a></td>
         <td>-</td>
@@ -1538,7 +1538,7 @@
         <td><a href="http://w3c-test.org/XMLHttpRequest/xmlhttprequest-timeout-twice.html">xmlhttprequest-timeout-twice.html</a></td>
         <td class="webkit pass">Pass</td>
         <td class="blink pass">Pass</td>
-        <td class="gecko fail"><a href="about:blank">Fail(Partial)</a></td>
+        <td class="gecko pass">Pass</td>
         <td class="trident fail"><a href="about:blank">Fail(Partial)</a></td>
         <td class="presto fail"><a href="about:blank">Fail(Partial)</a></td>
         <td>Trident: Harness encountered an error.</td>
@@ -1555,7 +1555,7 @@
       <tr>
         <td><a href="http://w3c-test.org/XMLHttpRequest/xmlhttprequest-timeout-worker-overrides.html">xmlhttprequest-timeout-worker-overrides.html</a></td>
         <td class="webkit fail"><a href="about:blank">Fail(Partial)</a></td>
-        <td class="blink fail"><a href="about:blank">Fail(Partial)</a></td>
+        <td class="blink pass">Pass</td>
         <td class="gecko pass">Pass</td>
         <td class="trident fail"><a href="about:blank">Fail</a></td>
         <td class="presto fail"><a href="about:blank">Fail(Partial)</a></td>
@@ -1610,7 +1610,7 @@
     <tfoot>
     </tfoot>
   </table>
-  <p class="notice">* Last update: 30th of Mar, 2014</p>
+  <p class="notice">* Last update: 26th of Oct, 2014</p>
   <script src="scripts/main.js"></script>
 </body>
 </html>
